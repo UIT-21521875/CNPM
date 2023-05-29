@@ -1,0 +1,54 @@
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.pdb
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.AssemblyReference.cache
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.SuggestedBindingRedirects.cache
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Login.resources
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Properties.Resources.resources
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.GenerateResource.cache
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.CoreCompileInputs.cache
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.exe
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.pdb
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.TableManager.resources
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductManager.resources
+D:\Công nghệ PM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductInformation.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.AssemblyReference.cache
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.SuggestedBindingRedirects.cache
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Login.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductInformation.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductManager.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.GenerateResource.cache
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.exe
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.pdb
+D:\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config
+D:\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe
+D:\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.pdb
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Properties.Resources.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.CoreCompileInputs.cache
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffManager.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.InsertProductInfor.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.EditProductInfor.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffInfor.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.EditStaffInfor.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.InsertStaffInfor.resources
+D:\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.VideoGame.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.pdb
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.AssemblyReference.cache
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.SuggestedBindingRedirects.cache
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.EditProductInfor.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.EditStaffInfor.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.InsertProductInfor.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.InsertStaffInfor.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Login.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductInformation.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductManager.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Properties.Resources.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffInfor.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffManager.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.VideoGame.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.GenerateResource.cache
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.CoreCompileInputs.cache
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.exe
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.pdb
