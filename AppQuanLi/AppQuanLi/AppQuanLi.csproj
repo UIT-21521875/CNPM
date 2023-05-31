@@ -59,17 +59,17 @@
     <Compile Include="EditStaffInfor.Designer.cs">
       <DependentUpon>EditStaffInfor.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertProductInfor.cs">
+    <Compile Include="AddProductInfor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InsertProductInfor.Designer.cs">
-      <DependentUpon>InsertProductInfor.cs</DependentUpon>
+    <Compile Include="AddProductInfor.Designer.cs">
+      <DependentUpon>AddProductInfor.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertStaffInfor.cs">
+    <Compile Include="AddStaffInfor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InsertStaffInfor.Designer.cs">
-      <DependentUpon>InsertStaffInfor.cs</DependentUpon>
+    <Compile Include="AddStaffInfor.Designer.cs">
+      <DependentUpon>AddStaffInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -82,11 +82,11 @@
     <Compile Include="StaffInfor.Designer.cs">
       <DependentUpon>StaffInfor.cs</DependentUpon>
     </Compile>
-    <Compile Include="StaffManager.cs">
+    <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StaffManager.Designer.cs">
-      <DependentUpon>StaffManager.cs</DependentUpon>
+    <Compile Include="StaffManagement.Designer.cs">
+      <DependentUpon>StaffManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -100,11 +100,11 @@
     <Compile Include="ProductInformation.Designer.cs">
       <DependentUpon>ProductInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductManager.cs">
+    <Compile Include="ProductManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductManager.Designer.cs">
-      <DependentUpon>ProductManager.cs</DependentUpon>
+    <Compile Include="ProductManagement.Designer.cs">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,11 +120,11 @@
     <EmbeddedResource Include="EditStaffInfor.resx">
       <DependentUpon>EditStaffInfor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertProductInfor.resx">
-      <DependentUpon>InsertProductInfor.cs</DependentUpon>
+    <EmbeddedResource Include="AddProductInfor.resx">
+      <DependentUpon>AddProductInfor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertStaffInfor.resx">
-      <DependentUpon>InsertStaffInfor.cs</DependentUpon>
+    <EmbeddedResource Include="AddStaffInfor.resx">
+      <DependentUpon>AddStaffInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -132,8 +132,8 @@
     <EmbeddedResource Include="ProductInformation.resx">
       <DependentUpon>ProductInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductManager.resx">
-      <DependentUpon>ProductManager.cs</DependentUpon>
+    <EmbeddedResource Include="ProductManagement.resx">
+      <DependentUpon>ProductManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,8 +143,8 @@
     <EmbeddedResource Include="StaffInfor.resx">
       <DependentUpon>StaffInfor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StaffManager.resx">
-      <DependentUpon>StaffManager.cs</DependentUpon>
+    <EmbeddedResource Include="StaffManagement.resx">
+      <DependentUpon>StaffManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VideoGame.resx">
       <DependentUpon>VideoGame.cs</DependentUpon>
