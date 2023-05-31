@@ -48,7 +48,7 @@ namespace AppQuanLi
 
         private void btn_staff_Click(object sender, EventArgs e)
         {
-            showForm (new StaffManager());
+            showForm (new StaffManagement());
         }
 
         private void btn_customer_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace AppQuanLi
 
         private void btn_productt_Click(object sender, EventArgs e)
         {
-            showForm(new ProductManager());
+            showForm(new ProductManagement());
         }
 
         private void btn_gara_Click(object sender, EventArgs e)
