@@ -495,3 +495,124 @@ BEGIN
     WHERE MASP IS NULL;
 END;
 
+-- Tạo trigger tự động cập nhật trạng thái (TRANGTHAI) đã thuê của bảng TINHTRANGSP khi một hóa đơn được tạo từ bảng HOADON
+CREATE TRIGGER TR_HOADON_INSERT_TRANGTHAI
+ON HOADON
+AFTER INSERT
+AS
+BEGIN
+    UPDATE TINHTRANGSP
+    SET TRANGTHAI = 'Đã thuê'
+    WHERE MATTSP IN (SELECT MASP FROM CHITIETHD WHERE MAHD IN (SELECT MAHD FROM inserted));
+END;
+-- tạo check constraint cho CCCD  sao cho chỉ được nhập quá 12 số
+ALTER TABLE THONGTIN
+ADD CONSTRAINT CHK_CCCD_LENGTH CHECK (LEN(CCCD) <= 12);
+
+-- Insert dữ liệu cho bảng THELOAI
+INSERT INTO THELOAI (MATL, TENTL) VALUES
+(1, 'Shoot ''em up'),
+(2, 'Survival horror'),
+(3, 'Card battle'),
+(4, 'Action role-playing'),
+(5, 'Role-playing'),
+(6, 'Sports'),
+(7, 'Vehicular combat'),
+(8, 'Racing'),
+(9, 'Simulation'),
+(10, 'Artillery'),
+(11, 'Battle royale'),
+(12, 'Strategy'),
+(13, 'Third-person shooter'),
+(14, 'Action'),
+(15, 'Action-adventure'),
+(16, 'Tactical'),
+(17, 'Hack and slash'),
+(18, 'Run and gun'),
+(19, 'Combat flight simulator'),
+(20, 'Real-time tactics'),
+(21, 'Loot shooter'),
+(22, 'Roguelike'),
+(23, 'Rougelike'),
+(24, 'Real-time'),
+(25, 'Platformer'),
+(26, 'Fishing'),
+(27, 'Business'),
+(28, 'Puzzle'),
+(29, 'Survival'),
+(30, 'Shooter'),
+(31, 'First-person shooter'),
+(32, 'Adventure'),
+(33, 'Fantasy'),
+(34, 'Fighting'),
+(35, 'Arcade'),
+(36, 'Creature collection'),
+(37, 'Platform'),
+(38, 'Maze'),
+(39, 'Stealth'),
+(40, 'Soulslike'),
+(41, 'Horror'),
+(42, 'Beat ''em up'),
+(43, 'Fighter'),
+(44, 'Metroidvania'),
+(45, '3D platformer'),
+(46, 'Farming'),
+(47, 'Base-building'),
+(48, 'Action-adventure game'),
+(49, 'Card & board'),
+(50, 'Visual novel'),
+(51, 'Construction and management'),
+(52, 'Puzzle platformer'),
+(53, 'Family'),
+(54, 'Tower defense'),
+(55, 'Mystery-thriller'),
+(56, 'Psychological horror'),
+(57, 'Exploration'),
+(58, 'Kart'),
+(59, 'Board game'),
+(60, 'Rhythm'),
+(61, 'Interactive drama'),
+(62, 'Vehicle'),
+(63, 'Massively multiplayer online'),
+(64, 'Space flight'),
+(65, 'Space station'),
+(66, 'Party'),
+(67, 'Sandbox'),
+(68, 'Social deduction'),
+(69, 'Aerial combat'),
+(70, 'Japanese'),
+(71, 'Turn-based'),
+(72, 'Rail shooter'),
+(73, 'Point-And-Click Adventure'),
+(74, 'Twin-stick shooter'),
+(75, 'Grand'),
+(76, 'Space combat'),
+(77, 'Dating'),
+(78, 'Auto battler'),
+(79, 'Hero shooter');
+
+INSERT INTO SANPHAM (MASP, MATL, TENSP, NHAPH, NGPH, NENTANG, GIATHUE)
+VALUES
+('SP000001', 31, 'Yurukill: The Calumniation Game', 'JP: Izanagi Games', '2022-06-07', 'Playstation 5', 20000),
+('SP000003', 19, 'Yuoni', 'Chorus Worldwide', '2021-08-19', 'Playstation 5', 20000),
+('SP000004', 52, 'Yu-Gi-Oh! Master Duel', 'Konami', '2022-01-28', 'Playstation 5', 20000),
+('SP000005', 78, 'Ys X: Nordics', 'Nihon Falcom', NULL, 'Playstation 5', 20000),
+('SP000006', 45, 'Ys VIII: Lacrimosa of Dana', 'NIS America', '2022-11-15', 'Playstation 5', 20000),
+('SP000007', 73, 'Ys IX: Monstrum Nox', 'NIS America', '2023-05-09', 'Playstation 5', 20000),
+('SP000008', 29, 'Yakuza: Like a Dragon', 'Sega', '2021-03-02', 'Playstation 5', 20000),
+('SP000009', 48, 'WWE 2K23', '2K', '2023-03-17', 'Playstation 5', 20000),
+('SP000010', 69, 'WWE 2K22', '2K', '2022-03-11', 'Playstation 5', 20000),
+('SP000011', 52, 'Wreckfest', 'THQ Nordic', '2021-06-01', 'Playstation 5', 20000),
+('SP000013', 56, 'WRC 10', 'Nacon', '2021-09-02', 'Playstation 5', 20000),
+('SP000015', 31, 'WRC 9', 'Nacon', '2020-11-12', 'Playstation 5', 20000),
+('SP000017', 1, 'Worms Rumble', 'Team17', '2020-12-01', 'Playstation 5', 20000),
+('SP000020', 34, 'World War Z', 'Saber Interactive', '2019-04-16', 'Playstation 5', 20000),
+('SP000022', 3, 'Wolfenstein: The New Order', 'Bethesda Softworks', '2014-05-20', 'Playstation 5', 20000),
+('SP000023', 3, 'Wolfenstein: The Old Blood', 'Bethesda Softworks', '2015-05-05', 'Playstation 5', 20000),
+('SP000024', 3, 'Wolfenstein II: The New Colossus', 'Bethesda Softworks', '2017-10-27', 'Playstation 5', 20000),
+('SP000025', 42, 'Watch Dogs: Legion', 'Ubisoft', '2020-10-29', 'Playstation 5', 20000),
+('SP000026', 3, 'Watch Dogs 2', 'Ubisoft', '2016-11-15', 'Playstation 5', 20000),
+('SP000027', 3, 'Watch Dogs', 'Ubisoft', '2014-05-27', 'Playstation 5', 20000),
+('SP000039', 31, 'Warhammer: Vermintide 2', 'Fatshark', '2018-03-08', 'Playstation 5', 20000);
+
+SELECT * FROM SANPHAM
