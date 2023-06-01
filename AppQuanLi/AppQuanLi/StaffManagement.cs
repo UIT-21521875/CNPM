@@ -47,12 +47,6 @@ namespace AppQuanLi
 
         }
 
-        private void btn_xemthongtin_Click(object sender, EventArgs e)
-        {
-             StaffInfor s = new StaffInfor();
-            s.ShowDialog();
-        }
-
         private void StaffManager_Load(object sender, EventArgs e)
         {
 
@@ -63,17 +57,26 @@ namespace AppQuanLi
 
         }
 
+        private void tb_timkiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_xoasanpham_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_themnhanvien_Click(object sender, EventArgs e)
         {
             AddStaffInfor i = new AddStaffInfor();
             i.ShowDialog();
         }
 
-        
-
-        private void tb_timkiem_TextChanged(object sender, EventArgs e)
+        private void btn_xemthongtin_Click(object sender, EventArgs e)
         {
-
+            StaffInfor s = new StaffInfor();
+            s.ShowDialog();
         }
     }
 }

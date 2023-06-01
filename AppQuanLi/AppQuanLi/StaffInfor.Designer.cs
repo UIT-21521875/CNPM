@@ -41,6 +41,9 @@
             // 
             // tb_name
             // 
+            this.tb_name.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_name.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_name.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_name.Location = new System.Drawing.Point(289, 185);
@@ -56,6 +59,9 @@
             // 
             // tb_diachi
             // 
+            this.tb_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_diachi.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_diachi.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_diachi.Location = new System.Drawing.Point(289, 387);
@@ -71,6 +77,9 @@
             // 
             // tb_chucvu
             // 
+            this.tb_chucvu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_chucvu.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_chucvu.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_chucvu.Location = new System.Drawing.Point(289, 455);
@@ -86,6 +95,9 @@
             // 
             // tb_tinhtrang
             // 
+            this.tb_tinhtrang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_tinhtrang.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_tinhtrang.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_tinhtrang.Location = new System.Drawing.Point(592, 455);
@@ -101,6 +113,9 @@
             // 
             // tb_manv
             // 
+            this.tb_manv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_manv.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_manv.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_manv.Location = new System.Drawing.Point(289, 263);
@@ -116,6 +131,9 @@
             // 
             // tb_email
             // 
+            this.tb_email.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_email.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_email.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_email.Location = new System.Drawing.Point(289, 327);
@@ -131,6 +149,9 @@
             // 
             // tb_numPhone
             // 
+            this.tb_numPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_numPhone.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_numPhone.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_numPhone.Location = new System.Drawing.Point(592, 263);
@@ -146,6 +167,9 @@
             // 
             // tb_birthday
             // 
+            this.tb_birthday.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_birthday.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_birthday.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_birthday.Location = new System.Drawing.Point(592, 327);
@@ -161,6 +185,9 @@
             // 
             // btn_edit
             // 
+            this.btn_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_edit.BackColor = System.Drawing.Color.Violet;
             this.btn_edit.Font = new System.Drawing.Font("Microsoft YaHei UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit.Location = new System.Drawing.Point(400, 535);

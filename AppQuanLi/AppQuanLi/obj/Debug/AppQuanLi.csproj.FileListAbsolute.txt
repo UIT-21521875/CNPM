@@ -52,7 +52,6 @@ C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.GenerateResource.cach
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.CoreCompileInputs.cache
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.exe
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.pdb
-C:\temp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config
 C:\temp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe
 C:\temp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.pdb
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.AssemblyReference.cache

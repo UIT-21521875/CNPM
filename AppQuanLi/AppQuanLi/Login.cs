@@ -19,8 +19,7 @@ namespace AppQuanLi
 
         private void lb_login_Click(object sender, EventArgs e)
         {
-
-            if (tb_tk.Text.Trim() == "raiden" & tb_MK.Text.Trim() == "raiden")
+            if (tb_tk.Text.Trim() == "123" & tb_MK.Text.Trim() == "123")
             {
                 VideoGame v = new VideoGame();
                 this.Hide();

@@ -160,9 +160,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\2.png" />
   </ItemGroup>
   <ItemGroup>

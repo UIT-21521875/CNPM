@@ -66,6 +66,8 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.Menu);
             this.panel2.Controls.Add(this.pb_menu);
@@ -99,6 +101,9 @@
             // 
             // pn_button
             // 
+            this.pn_button.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_button.AutoSize = true;
             this.pn_button.BackColor = System.Drawing.Color.Transparent;
             this.pn_button.Controls.Add(this.btn_staff);
@@ -412,6 +417,9 @@
             // 
             // pn_icon
             // 
+            this.pn_icon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_icon.AutoSize = true;
             this.pn_icon.BackColor = System.Drawing.Color.Transparent;
             this.pn_icon.Controls.Add(this.btn_staff_icon);
@@ -432,6 +440,9 @@
             // 
             // pn_show
             // 
+            this.pn_show.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_show.BackgroundImage = global::AppQuanLi.Properties.Resources.gamezone;
             this.pn_show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pn_show.Location = new System.Drawing.Point(278, 12);
