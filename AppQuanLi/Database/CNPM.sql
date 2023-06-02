@@ -508,7 +508,11 @@ END;
 -- tạo check constraint cho CCCD  sao cho chỉ được nhập quá 12 số
 ALTER TABLE THONGTIN
 ADD CONSTRAINT CHK_CCCD_LENGTH CHECK (LEN(CCCD) <= 12);
-
+ALTER TABLE THONGTIN 
+DROP CONSTRAINT CHK_CCCD_LENGTH
+DELETE FROM THONGTIN
+alter table THONGTIN 
+ ALTER COLUMN CCCD BIGINT NOT NULL ;
 -- Insert dữ liệu cho bảng THELOAI
 INSERT INTO THELOAI (MATL, TENTL) VALUES
 (1, 'Shoot ''em up'),
@@ -615,4 +619,105 @@ VALUES
 ('SP000027', 3, 'Watch Dogs', 'Ubisoft', '2014-05-27', 'Playstation 5', 20000),
 ('SP000039', 31, 'Warhammer: Vermintide 2', 'Fatshark', '2018-03-08', 'Playstation 5', 20000);
 
-SELECT * FROM SANPHAM
+DELETE FROM KHACHHANG
+SELECT * FROM NHANVIEN
+select * from THONGTIN
+
+INSERT INTO KHACHHANG(MAKH, MATT)
+VALUES (1,5)
+ alter table THONGTIN 
+ ALTER COLUMN CCCD BIGINT NOT NULL ;
+
+INSERT INTO THONGTIN (MATT, CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI)
+VALUES
+  (6, '943160228381', 'Nguyễn Huy Hải', '0903000030', '1997-03-05', 'customer_101@example.com', '100/17 Trần Hưng Đạo P.Phạm Ngũ Lão Q.01 TPHCM'),
+  (7, '854479961941', 'Nguyễn Thị Thanh Thảo', '0903000052', '1997-03-05', 'customer_102@example.com', '93/5 Bis ấp 3 P.Tân Thuận Đông Q.07 TPHCM'),
+  (8, '289081555891', 'Hứa Trần Linh Uyên', '0903000096', '1997-03-05', 'customer_103@example.com', '176 Lê Lai P.Bến Thành Q.01 TPHCM'),
+  (9, '862294590393', 'Trần Anh Tuấn', '0903000280', '1997-03-05', 'customer_104@example.com', '122 Lô B C/C Cô Giang P.Cô Giang Q.01 TPHCM'),
+  (10, '180918089376', 'Nguyễn Ngọc Thư', '0903000368', '1997-03-05', 'customer_105@example.com', '3 Nguyễn Huệ P.Bến Nghé Q.01 TPHCM'),
+  (11, '444396723550', 'Trần Minh Tuyết', '0903000499', '1997-03-05', 'customer_106@example.com', '258/17/15 Nguyễn Công Trứ P.Nguyễn Thái Bình Q.01 TPHCM'),
+  (12, '405120211520', 'Nguyễn Vĩnh Khương', '0903000606', '1997-03-05', 'customer_107@example.com', '54 Nguyễn Đình Chiểu P.Đakao Q.01 TPHCM'),
+  (13, '423750356898', 'Trần Thị Hà', '0903000612', '1997-03-05', 'customer_108@example.com', '453/77/d18 Lê Văn Sỹ P.12 Q.03 TPHCM'),
+  (14, '406832660965', 'Nguyễn Tiến Quyết', '0903000659', '1997-03-05', 'customer_109@example.com', '7 LÊ Duẩn P.Bến Nghé Q.01 TPHCM'),
+  (15, '630730922069', 'Nguyễn Thị Kim Hậu', '0903000737', '1997-03-05', 'customer_110@example.com', '120 Lý Thái Tổ P.02 Q.03 TPHCM'),
+  (16, '394355384559', 'Lê Thị Dưỡng', '0903000775', '1997-03-05', 'customer_12@example.com', 'A2/10 KP2 P.Tân Phong Q.07 TPHCM'),
+  (17, '818039384746', 'Nguyễn Thị Hoàng Vân', '0903000791', '1997-03-05', 'customer_111@example.com', '1/60/6 Trần Văn Đang P.09 Q.03 TPHCM'),
+  (18, '202423658219', 'Nguyễn Thị Diễm', '0903000815', '1997-03-05', 'customer_112@example.com', '400A Lê Văn Sỹ P.14 Q.03 TPHCM'),
+  (19, '780844086018', 'Lê Thành Nam', '0903000835', '1997-03-05', 'customer_113@example.com', '22 Phòng 209 Nguyễn Trãi Khu Chung Cư P.Bến Thành Q.01 TPHCM'),
+  (20, '734644755149', 'Nguyễn Lê Ngọc', '0903001001', '1997-03-05', 'customer_114@example.com', '21B/9 Nguyễn Đình Chiểu P.Đakao Q.01 TPHCM'),
+  (21, '143508420325', 'Huỳnh Thị Sông Hương', '0903001003', '1997-03-05', 'customer_115@example.com', '19 Nguyễn Trung Trực P.Bến Thành Q.01 TPHCM'),
+  (22, '155175634826', 'Huỳnh Thị Thanh Loan', '0903001124', '1997-03-05', 'customer_116@example.com', '6B/13 ấp 4 Đường 23 P.Tân Quy Q.07 TPHCM'),
+  (23, '455181697886', 'Lê Thanh Anh Tuấn', '0903001128', '1997-03-05', 'customer_117@example.com', '319/21 Nguyễn Công Trứ P.Nguyễn Thái Bình Q.01 TPHCM'),
+  (24, '514346206921', 'Trần Quang Thảo', '0903001131', '1997-03-05', 'customer_118@example.com', '8A/8C2 Thái Văn Lung P.Bến Nghé Q.01 TPHCM'),
+  (25, '293139694000', 'Đào Thị Ngọc Mai', '0903001139', '1997-03-05', 'customer_119@example.com', '3/6 KP1 Tổ 02 P.An Khánh Q.02 TPHCM'),
+  (26, '859272596759', 'Dương Thị Hoa', '0903001165', '1997-03-05', 'customer_120@example.com', '7A Phạm Viết Chánh P.Nguyễn Cư Trinh Q.01 TPHCM'),
+  (27, '865108956324', 'Lê Ngọc Thọ', '0903001211', '1997-03-05', 'customer_13@example.com', '68/4 KP4 P.Phú Thuận Q.07 TPHCM'),
+  (28, '572683805620', 'Lý Kim Giàu', '0903001217', '1997-03-05', 'customer_121@example.com', '235/31 Nam Kỳ Khởi Nghĩa P.07 Q.03 TPHCM'),
+  (29, '927282651161', 'Đỗ Phương Thảo', '0903001218', '1997-03-05', 'customer_122@example.com', '208 Nguyễn Đình Chiểu P.06 Q.03 TPHCM'),
+  (30, '662847877096', 'Dương Kim Xuyến', '0903001257', '1997-03-05', 'customer_123@example.com', '650 KP04 P.An Phú Q.02 TPHCM'),
+  (31, '504331971893', 'Lê Xuân Hồng', '0903001306', '1997-03-05', 'customer_124@example.com', '240 Pasteur P.06 Q.03 TPHCM'),
+  (32, '228020715399', 'Lương Thanh Tùng', '0903001337', '1997-03-05', 'customer_125@example.com', '164 KP2 Nguyễn Duy Trinh P.Bình Trưng Tây Q.02 TPHCM'),
+  (33, '757840210962', 'Nguyễn Thị Ngọc Thơ', '0903001356', '1997-03-05', 'customer_126@example.com', '174/67/4 Nguyễn Thiện Thuật P.03 Q.03 TPHCM'),
+  (34, '852189572241', 'Nguyễn Đức Hợp', '0903001409', '1997-03-05', 'customer_127@example.com', '647 Điện BIên Phủ P.01 Q.03 TPHCM'),
+  (35, '162478398330', 'Đỗ Tuyết Dung', '0903001602', '1997-03-05', 'customer_128@example.com', '41/19 Nguyễn Đình Chiểu P.04 Q.03 TPHCM'),
+  (36, '454165477777', 'Võ Anh Tuấn', '0903001630', '1997-03-05', 'customer_129@example.com', '306 Nguyễn Thị Minh Khai P.05 Q.03 TPHCM(Cửa Hàng Mật Ong)'),
+  (37, '854646120648', 'Trương Thị Quỳnh Giao', '0903001671', '1997-03-05', 'customer_130@example.com', '101/22 Trần Khắc Chân P.Tân Định Q.01 TPHCM'),
+  (38, '168592339665', 'Nguyễn Thị Thanh Vân', '0903001697', '1997-03-05', 'customer_14@example.com', '20/16H Kỳ Đồng P.09 Q.03 TPHCM'),
+  (39, '937916503560', 'Trương Thị Kim Oanh', '0903001707', '1997-03-05', 'customer_132@example.com', '23A/1 Hồ Xuân Hương P.03 Q.03 TPHCM'),
+  (40, '589960551787', 'Nguyễn Tấn Thành', '0903001732', '1997-03-05', 'customer_133@example.com', '33/15/30 Nguyễn Công Trứ P.Nguyễn Thái Bình Q.01 TPHCM'),
+  (41, '661356850324', 'Võ Văn Đạt', '0903001763', '1997-03-05', 'customer_134@example.com', '68 Nguyễn Bỉnh Khiêm P.Đa Kao Q.01 TPHCM'),
+  (42, '457960347245', 'Lê Đình Thịnh', '0903001803', '1997-03-05', 'customer_135@example.com', '218 Điện Biên Phủ P.15 Q.03 TPHCM'),
+  (43, '136392688481', 'Lưu Minh Tuấn', '0903001812', '1997-03-05', 'customer_136@example.com', '18/4 Tân Mỹ P.Tân Thuận Tây Q.07 TPHCM'),
+  (44, '642312344936', 'Trần Thanh Hải', '0903001815', '1997-03-05', 'customer_137@example.com', '201/15/37 Lê Văn Sỹ P.14 Q.03 TPHCM'),
+  (45, '726444860198', 'Nguyễn Ngọc Quỳnh', '0903001867', '1997-03-05', 'customer_138@example.com', '96 Phạm Hồng Thái P.14 Q.03 TPHCM'),
+  (46, '122571515174', 'Nguyễn Thị Thuỳ Linh', '0903001893', '1997-03-05', 'customer_139@example.com', '211/3/10 Lý Thường Kiệt P.08 Q.03 TPHCM'),
+  (47, '665297783176', 'Nguyễn Đình Đức', '0903001912', '1997-03-05', 'customer_140@example.com', '197/27/1/9 Trần Văn Đang P.09 Q.03 TPHCM'),
+  (48, '306390749185', 'Huỳnh Ngọc Tú', '0903001915', '1997-03-05', 'customer_141@example.com', '239 Phạm Ngũ Lão P.03 Q.03 TPHCM'),
+  (49, '586959260830', 'Đinh Thị Hạnh', '0903001956', '1997-03-05', 'customer_142@example.com', '413 Trần Hưng Đạo P.02 Q.05 TPHCM'),
+  (50, '289863999488', 'Lâm Thị Phương', '0903001972', '1997-03-05', 'customer_143@example.com', '406 Điện Biên Phủ P.11 Q.10 TPHCM');
+  
+  INSERT INTO KHACHHANG (MAKH, MATT)
+VALUES
+(1, 6),
+(2, 7),
+(3, 8),
+(4, 9),
+(5, 10),
+(6, 11),
+(7, 12),
+(8, 13),
+(9, 14),
+(10, 15),
+(11, 16),
+(12, 17),
+(13, 18),
+(14, 19),
+(15, 20),
+(16, 21),
+(17, 22),
+(18, 23),
+(19, 24),
+(20, 25),
+(21, 26),
+(22, 27),
+(23, 28),
+(24, 29),
+(25, 30),
+(26, 31),
+(27, 32),
+(28, 33),
+(29, 34),
+(30, 35),
+(31, 36),
+(32, 37),
+(33, 38),
+(34, 39),
+(35, 40),
+(36, 41),
+(37, 42),
+(38, 43),
+(39, 44);
+
+
+SELECT * FROM KHACHHANG
+SELECT * FROM THONGTIN
