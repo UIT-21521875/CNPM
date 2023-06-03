@@ -29,68 +29,25 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
-            this.directorySearcher2 = new System.DirectoryServices.DirectorySearcher();
-            this.directorySearcher3 = new System.DirectoryServices.DirectorySearcher();
-            this.directorySearcher4 = new System.DirectoryServices.DirectorySearcher();
-            this.directorySearcher5 = new System.DirectoryServices.DirectorySearcher();
-            this.directorySearcher6 = new System.DirectoryServices.DirectorySearcher();
-            this.directorySearcher7 = new System.DirectoryServices.DirectorySearcher();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.staffList = new System.Windows.Forms.DataGridView();
+            this.ProductList = new System.Windows.Forms.DataGridView();
             this.tb_timkiem = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.btn_xoasanpham = new System.Windows.Forms.Button();
             this.btn_xemthongtin = new System.Windows.Forms.Button();
             this.btn_themsanpham = new System.Windows.Forms.Button();
             this.btn_timkiem = new System.Windows.Forms.Button();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.directorySearcher7 = new System.DirectoryServices.DirectorySearcher();
+            this.directorySearcher6 = new System.DirectoryServices.DirectorySearcher();
+            this.directorySearcher5 = new System.DirectoryServices.DirectorySearcher();
+            this.directorySearcher4 = new System.DirectoryServices.DirectorySearcher();
+            this.directorySearcher3 = new System.DirectoryServices.DirectorySearcher();
+            this.directorySearcher2 = new System.DirectoryServices.DirectorySearcher();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.staffList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductList)).BeginInit();
             this.SuspendLayout();
-            // 
-            // directorySearcher1
-            // 
-            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
-            // directorySearcher2
-            // 
-            this.directorySearcher2.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher2.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher2.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
-            // directorySearcher3
-            // 
-            this.directorySearcher3.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher3.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher3.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
-            // directorySearcher4
-            // 
-            this.directorySearcher4.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher4.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher4.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
-            // directorySearcher5
-            // 
-            this.directorySearcher5.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher5.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher5.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
-            // directorySearcher6
-            // 
-            this.directorySearcher6.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher6.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher6.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            // 
-            // directorySearcher7
-            // 
-            this.directorySearcher7.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher7.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
-            this.directorySearcher7.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
             // panel1
             // 
@@ -98,12 +55,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.staffList);
+            this.panel1.Controls.Add(this.ProductList);
             this.panel1.Controls.Add(this.tb_timkiem);
             this.panel1.Controls.Add(this.comboBox6);
             this.panel1.Controls.Add(this.comboBox5);
             this.panel1.Controls.Add(this.comboBox4);
-            this.panel1.Controls.Add(this.btn_xoasanpham);
             this.panel1.Controls.Add(this.btn_xemthongtin);
             this.panel1.Controls.Add(this.btn_themsanpham);
             this.panel1.Controls.Add(this.btn_timkiem);
@@ -112,13 +68,13 @@
             this.panel1.Size = new System.Drawing.Size(1030, 672);
             this.panel1.TabIndex = 0;
             // 
-            // staffList
+            // ProductList
             // 
-            this.staffList.AllowDrop = true;
-            this.staffList.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.staffList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.staffList.BackgroundColor = System.Drawing.Color.White;
-            this.staffList.ColumnHeadersHeight = 35;
+            this.ProductList.AllowDrop = true;
+            this.ProductList.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ProductList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ProductList.BackgroundColor = System.Drawing.Color.White;
+            this.ProductList.ColumnHeadersHeight = 35;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,16 +82,16 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.staffList.DefaultCellStyle = dataGridViewCellStyle1;
-            this.staffList.Location = new System.Drawing.Point(39, 213);
-            this.staffList.Name = "staffList";
-            this.staffList.ReadOnly = true;
-            this.staffList.RowHeadersWidth = 51;
-            this.staffList.RowTemplate.Height = 24;
-            this.staffList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.staffList.Size = new System.Drawing.Size(959, 392);
-            this.staffList.TabIndex = 13;
-            this.staffList.TabStop = false;
+            this.ProductList.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ProductList.Location = new System.Drawing.Point(39, 213);
+            this.ProductList.Name = "ProductList";
+            this.ProductList.ReadOnly = true;
+            this.ProductList.RowHeadersWidth = 51;
+            this.ProductList.RowTemplate.Height = 24;
+            this.ProductList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ProductList.Size = new System.Drawing.Size(959, 392);
+            this.ProductList.TabIndex = 13;
+            this.ProductList.TabStop = false;
             // 
             // tb_timkiem
             // 
@@ -183,20 +139,6 @@
             this.comboBox4.TabIndex = 11;
             this.comboBox4.Text = "Thể loại";
             // 
-            // btn_xoasanpham
-            // 
-            this.btn_xoasanpham.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_xoasanpham.BackColor = System.Drawing.Color.Violet;
-            this.btn_xoasanpham.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_xoasanpham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoasanpham.Location = new System.Drawing.Point(799, 154);
-            this.btn_xoasanpham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_xoasanpham.Name = "btn_xoasanpham";
-            this.btn_xoasanpham.Size = new System.Drawing.Size(199, 39);
-            this.btn_xoasanpham.TabIndex = 5;
-            this.btn_xoasanpham.Text = "Xóa sản phẩm";
-            this.btn_xoasanpham.UseVisualStyleBackColor = false;
-            // 
             // btn_xemthongtin
             // 
             this.btn_xemthongtin.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -210,7 +152,6 @@
             this.btn_xemthongtin.TabIndex = 6;
             this.btn_xemthongtin.Text = "Xem thông tin";
             this.btn_xemthongtin.UseVisualStyleBackColor = false;
-            this.btn_xemthongtin.Click += new System.EventHandler(this.btn_xemthongtin_Click);
             // 
             // btn_themsanpham
             // 
@@ -218,14 +159,13 @@
             this.btn_themsanpham.BackColor = System.Drawing.Color.Violet;
             this.btn_themsanpham.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_themsanpham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_themsanpham.Location = new System.Drawing.Point(799, 111);
+            this.btn_themsanpham.Location = new System.Drawing.Point(799, 148);
             this.btn_themsanpham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_themsanpham.Name = "btn_themsanpham";
             this.btn_themsanpham.Size = new System.Drawing.Size(199, 39);
             this.btn_themsanpham.TabIndex = 7;
             this.btn_themsanpham.Text = "Thêm sản phẩm";
             this.btn_themsanpham.UseVisualStyleBackColor = false;
-            this.btn_themsanpham.Click += new System.EventHandler(this.btn_themsanpham_Click);
             // 
             // btn_timkiem
             // 
@@ -241,6 +181,48 @@
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
             // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // directorySearcher7
+            // 
+            this.directorySearcher7.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher7.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher7.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // directorySearcher6
+            // 
+            this.directorySearcher6.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher6.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher6.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // directorySearcher5
+            // 
+            this.directorySearcher5.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher5.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher5.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // directorySearcher4
+            // 
+            this.directorySearcher4.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher4.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher4.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // directorySearcher3
+            // 
+            this.directorySearcher3.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher3.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher3.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // directorySearcher2
+            // 
+            this.directorySearcher2.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher2.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher2.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
             // ProductManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -254,32 +236,30 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProductManagement";
             this.Text = "Quản lí sản phẩm";
-            this.Load += new System.EventHandler(this.ProductManager_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.staffList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductList)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.DirectoryServices.DirectorySearcher directorySearcher1;
-        private System.DirectoryServices.DirectorySearcher directorySearcher2;
-        private System.DirectoryServices.DirectorySearcher directorySearcher3;
-        private System.DirectoryServices.DirectorySearcher directorySearcher4;
-        private System.DirectoryServices.DirectorySearcher directorySearcher5;
-        private System.DirectoryServices.DirectorySearcher directorySearcher6;
-        private System.DirectoryServices.DirectorySearcher directorySearcher7;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView staffList;
+        private System.Windows.Forms.DataGridView ProductList;
         private System.Windows.Forms.TextBox tb_timkiem;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Button btn_xoasanpham;
         private System.Windows.Forms.Button btn_xemthongtin;
         private System.Windows.Forms.Button btn_themsanpham;
         private System.Windows.Forms.Button btn_timkiem;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.DirectoryServices.DirectorySearcher directorySearcher7;
+        private System.DirectoryServices.DirectorySearcher directorySearcher6;
+        private System.DirectoryServices.DirectorySearcher directorySearcher5;
+        private System.DirectoryServices.DirectorySearcher directorySearcher4;
+        private System.DirectoryServices.DirectorySearcher directorySearcher3;
+        private System.DirectoryServices.DirectorySearcher directorySearcher2;
     }
 }

@@ -53,7 +53,7 @@ namespace AppQuanLi
 
         private void btn_customer_Click(object sender, EventArgs e)
         {
-            
+            showForm(new CustomerManagement());
         }
 
         private void btn_productt_Click(object sender, EventArgs e)
