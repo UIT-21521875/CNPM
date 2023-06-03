@@ -33,7 +33,6 @@
             this.staffList = new System.Windows.Forms.DataGridView();
             this.tb_timkiem = new System.Windows.Forms.TextBox();
             this.btn_timkiem = new System.Windows.Forms.Button();
-            this.btn_xoasanpham = new System.Windows.Forms.Button();
             this.btn_xemthongtin = new System.Windows.Forms.Button();
             this.btn_themnhanvien = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -50,7 +49,6 @@
             this.panel1.Controls.Add(this.pn_stafflist);
             this.panel1.Controls.Add(this.tb_timkiem);
             this.panel1.Controls.Add(this.btn_timkiem);
-            this.panel1.Controls.Add(this.btn_xoasanpham);
             this.panel1.Controls.Add(this.btn_xemthongtin);
             this.panel1.Controls.Add(this.btn_themnhanvien);
             this.panel1.Location = new System.Drawing.Point(24, 29);
@@ -104,21 +102,6 @@
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
             // 
-            // btn_xoasanpham
-            // 
-            this.btn_xoasanpham.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_xoasanpham.BackColor = System.Drawing.Color.Violet;
-            this.btn_xoasanpham.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_xoasanpham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoasanpham.Location = new System.Drawing.Point(800, 122);
-            this.btn_xoasanpham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_xoasanpham.Name = "btn_xoasanpham";
-            this.btn_xoasanpham.Size = new System.Drawing.Size(197, 39);
-            this.btn_xoasanpham.TabIndex = 15;
-            this.btn_xoasanpham.Text = "Xóa nhân viên";
-            this.btn_xoasanpham.UseVisualStyleBackColor = false;
-            this.btn_xoasanpham.Click += new System.EventHandler(this.btn_xoasanpham_Click_1);
-            // 
             // btn_xemthongtin
             // 
             this.btn_xemthongtin.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -140,7 +123,7 @@
             this.btn_themnhanvien.BackColor = System.Drawing.Color.Violet;
             this.btn_themnhanvien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_themnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_themnhanvien.Location = new System.Drawing.Point(800, 79);
+            this.btn_themnhanvien.Location = new System.Drawing.Point(800, 106);
             this.btn_themnhanvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_themnhanvien.Name = "btn_themnhanvien";
             this.btn_themnhanvien.Size = new System.Drawing.Size(197, 39);
@@ -177,7 +160,6 @@
         private System.Windows.Forms.DataGridView staffList;
         private System.Windows.Forms.TextBox tb_timkiem;
         private System.Windows.Forms.Button btn_timkiem;
-        private System.Windows.Forms.Button btn_xoasanpham;
         private System.Windows.Forms.Button btn_xemthongtin;
         private System.Windows.Forms.Button btn_themnhanvien;
     }
