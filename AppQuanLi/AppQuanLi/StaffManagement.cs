@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppQuanLi.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,25 +22,14 @@ namespace AppQuanLi
         }
         void loadStaffList()
         {
-            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
+            
 
-
-            SqlConnection connection = new SqlConnection(connectionSTR);
+          
             string query = "select * from NHANVIEN";
 
-            connection.Open();
 
-            SqlCommand command = new SqlCommand(query, connection);
 
-            DataTable data = new DataTable();
-
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-
-            adapter.Fill(data);
-
-            connection.Close();
-            
-            staffList.DataSource = data;
+            staffList.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
 
         private void btn_timkiem_Click(object sender, EventArgs e)

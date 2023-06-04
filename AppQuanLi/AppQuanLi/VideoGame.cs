@@ -91,19 +91,17 @@ namespace AppQuanLi
 
         }
 
-        private void btn_logout_Click(object sender, EventArgs e)
+        private void btn_account_Click(object sender, EventArgs e)
         {
-          
-            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất", "Thông báo", MessageBoxButtons.YesNo);
-            if(result == DialogResult.Yes)
-            {
-                Login l = new Login();
-                this.Hide();
-                l.ShowDialog();
-            }
+            showForm(new Account());            
         }
        
         private void pn_show_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
         {
 
         }

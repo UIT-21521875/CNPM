@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppQuanLi.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,25 +21,11 @@ namespace AppQuanLi
         }
         void loadCustomerList()
         {
-            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
-
-
-            SqlConnection connection = new SqlConnection(connectionSTR);
+           
             string query = "SELECT MAKH, HOTEN, SODT, DIEMTICH\r\nFROM KHACHHANG INNER JOIN THONGTIN\r\nON KHACHHANG.MATT = THONGTIN.MATT";
 
-            connection.Open();
+            CustomerList.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
-            SqlCommand command = new SqlCommand(query, connection);
-
-            DataTable data = new DataTable();
-
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-
-            adapter.Fill(data);
-
-            connection.Close();
-
-            CustomerList.DataSource = data;
         }
     }
 }

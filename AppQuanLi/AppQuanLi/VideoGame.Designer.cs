@@ -36,7 +36,7 @@
             this.pn_button = new System.Windows.Forms.Panel();
             this.btn_staff = new System.Windows.Forms.Button();
             this.btn_customer = new System.Windows.Forms.Button();
-            this.btn_logout = new System.Windows.Forms.Button();
+            this.btn_admin = new System.Windows.Forms.Button();
             this.btn_care = new System.Windows.Forms.Button();
             this.btn_target = new System.Windows.Forms.Button();
             this.btn_point = new System.Windows.Forms.Button();
@@ -108,7 +108,7 @@
             this.pn_button.BackColor = System.Drawing.Color.Transparent;
             this.pn_button.Controls.Add(this.btn_staff);
             this.pn_button.Controls.Add(this.btn_customer);
-            this.pn_button.Controls.Add(this.btn_logout);
+            this.pn_button.Controls.Add(this.btn_admin);
             this.pn_button.Controls.Add(this.btn_care);
             this.pn_button.Controls.Add(this.btn_target);
             this.pn_button.Controls.Add(this.btn_point);
@@ -153,21 +153,21 @@
             this.btn_customer.UseVisualStyleBackColor = false;
             this.btn_customer.Click += new System.EventHandler(this.btn_customer_Click);
             // 
-            // btn_logout
+            // btn_admin
             // 
-            this.btn_logout.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.ForeColor = System.Drawing.Color.LightSalmon;
-            this.btn_logout.Image = global::AppQuanLi.Properties.Resources._19;
-            this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.Location = new System.Drawing.Point(3, 621);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(250, 63);
-            this.btn_logout.TabIndex = 1;
-            this.btn_logout.Text = "Đăng xuất";
-            this.btn_logout.UseVisualStyleBackColor = false;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            this.btn_admin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btn_admin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_admin.ForeColor = System.Drawing.Color.LightSalmon;
+            this.btn_admin.Image = global::AppQuanLi.Properties.Resources._19;
+            this.btn_admin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_admin.Location = new System.Drawing.Point(3, 621);
+            this.btn_admin.Name = "btn_admin";
+            this.btn_admin.Size = new System.Drawing.Size(250, 63);
+            this.btn_admin.TabIndex = 1;
+            this.btn_admin.Text = "  Tài khoản";
+            this.btn_admin.UseVisualStyleBackColor = false;
+            this.btn_admin.Click += new System.EventHandler(this.btn_account_Click);
             // 
             // btn_care
             // 
@@ -410,6 +410,7 @@
             this.button9.Size = new System.Drawing.Size(60, 63);
             this.button9.TabIndex = 2;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // sidebarTimer
             // 
@@ -487,7 +488,7 @@
         private System.Windows.Forms.Button btn_point;
         private System.Windows.Forms.Button btn_care;
         private System.Windows.Forms.PictureBox Menu;
-        private System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.Button btn_admin;
         private System.Windows.Forms.Timer sidebarTimer;
         private System.Windows.Forms.PictureBox pb_menu;
         private System.Windows.Forms.Button btn_staff_icon;

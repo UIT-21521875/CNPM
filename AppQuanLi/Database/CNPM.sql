@@ -725,5 +725,48 @@ SELECT * FROM THONGTIN
 SELECT MAKH, HOTEN, SODT, DIEMTICH
 FROM KHACHHANG INNER JOIN THONGTIN
 ON KHACHHANG.MATT = THONGTIN.MATT
+
+
+
 SELECT MASP, TENSP, NENTANG, GIATHUE
 FROM SANPHAM
+go
+
+
+
+
+
+INSERT INTO dbo.TAIKHOAN
+        ( UserName ,
+          PassWord ,
+          Type
+        )
+VALUES  ( N'K9' , -- UserName - nvarchar(100)
+          N'1' , -- PassWord - nvarchar(1000)
+          1  -- Type - int
+        )
+INSERT INTO dbo.TAIKHOAN
+        ( UserName ,
+          PassWord ,
+          Type
+        )
+VALUES  ( N'staff' , -- UserName - nvarchar(100)
+          N'1' , -- PassWord - nvarchar(1000)
+          0  -- Type - int
+        )
+GO
+
+CREATE PROC USP_GetAccountByUserName
+@userName nvarchar(100)
+AS 
+BEGIN
+	SELECT * FROM dbo.TAIKHOAN
+	WHERE USERNAME = @userName
+END
+GO
+
+EXEC dbo.USP_GetAccountByUserName @userName = N'staff' -- nvarchar(100)
+
+SELECT * FROM TAIKHOAN
+
+SELECT * FROM dbo.TAIKHOAN WHERE USERNAME = N'' AND PASSWORD = N''
