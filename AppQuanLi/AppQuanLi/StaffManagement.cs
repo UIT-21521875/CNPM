@@ -31,7 +31,9 @@ namespace AppQuanLi
 
             staffList.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
-
+        void BindingStaffInfor()
+        {
+        }   
         private void btn_timkiem_Click(object sender, EventArgs e)
         {
 

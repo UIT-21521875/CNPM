@@ -73,3 +73,4 @@ C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductManagement.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffManagement.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.CustomerManagement.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Account.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config

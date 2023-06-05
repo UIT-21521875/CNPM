@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pn_stafflist = new System.Windows.Forms.Panel();
-            this.staffList = new System.Windows.Forms.DataGridView();
             this.tb_timkiem = new System.Windows.Forms.TextBox();
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.btn_xemthongtin = new System.Windows.Forms.Button();
             this.btn_themnhanvien = new System.Windows.Forms.Button();
+            this.staffList = new System.Windows.Forms.DataGridView();
+            this.pn_stafflist = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.pn_stafflist.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffList)).BeginInit();
+            this.pn_stafflist.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,27 +55,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 614);
             this.panel1.TabIndex = 0;
-            // 
-            // pn_stafflist
-            // 
-            this.pn_stafflist.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pn_stafflist.Controls.Add(this.staffList);
-            this.pn_stafflist.Location = new System.Drawing.Point(38, 186);
-            this.pn_stafflist.Name = "pn_stafflist";
-            this.pn_stafflist.Size = new System.Drawing.Size(959, 392);
-            this.pn_stafflist.TabIndex = 19;
-            // 
-            // staffList
-            // 
-            this.staffList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.staffList.BackgroundColor = System.Drawing.Color.White;
-            this.staffList.ColumnHeadersHeight = 50;
-            this.staffList.Location = new System.Drawing.Point(0, 0);
-            this.staffList.Name = "staffList";
-            this.staffList.RowHeadersWidth = 51;
-            this.staffList.RowTemplate.Height = 24;
-            this.staffList.Size = new System.Drawing.Size(959, 392);
-            this.staffList.TabIndex = 0;
             // 
             // tb_timkiem
             // 
@@ -132,6 +111,27 @@
             this.btn_themnhanvien.UseVisualStyleBackColor = false;
             this.btn_themnhanvien.Click += new System.EventHandler(this.btn_themnhanvien_Click);
             // 
+            // staffList
+            // 
+            this.staffList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.staffList.BackgroundColor = System.Drawing.Color.White;
+            this.staffList.ColumnHeadersHeight = 50;
+            this.staffList.Location = new System.Drawing.Point(0, 0);
+            this.staffList.Name = "staffList";
+            this.staffList.RowHeadersWidth = 51;
+            this.staffList.RowTemplate.Height = 24;
+            this.staffList.Size = new System.Drawing.Size(959, 392);
+            this.staffList.TabIndex = 0;
+            // 
+            // pn_stafflist
+            // 
+            this.pn_stafflist.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pn_stafflist.Controls.Add(this.staffList);
+            this.pn_stafflist.Location = new System.Drawing.Point(38, 186);
+            this.pn_stafflist.Name = "pn_stafflist";
+            this.pn_stafflist.Size = new System.Drawing.Size(959, 392);
+            this.pn_stafflist.TabIndex = 19;
+            // 
             // StaffManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -147,8 +147,8 @@
             this.Load += new System.EventHandler(this.StaffManager_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pn_stafflist.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.staffList)).EndInit();
+            this.pn_stafflist.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -156,11 +156,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pn_stafflist;
-        private System.Windows.Forms.DataGridView staffList;
         private System.Windows.Forms.TextBox tb_timkiem;
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.Button btn_xemthongtin;
         private System.Windows.Forms.Button btn_themnhanvien;
+        private System.Windows.Forms.Panel pn_stafflist;
+        private System.Windows.Forms.DataGridView staffList;
     }
 }

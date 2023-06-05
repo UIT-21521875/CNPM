@@ -17,18 +17,15 @@ namespace AppQuanLi
         public Account()
         {
             InitializeComponent();
-            loadaccountList();
+          
         }
         void loadaccountList()
         {
 
             string query = "EXEC dbo.USP_GetAccountByUserName @userName";
 
-         
-
-            AccountList.DataSource = DataProvider.Instance.ExecuteQuery(query);
+            AccountList.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "staff" });
         }
-        VideoGame v;
         private void btn_logout_Click(object sender, EventArgs e)
         {
             
