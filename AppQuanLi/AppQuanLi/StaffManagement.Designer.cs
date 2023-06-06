@@ -73,11 +73,11 @@
             this.staffList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.staffList.BackgroundColor = System.Drawing.Color.White;
             this.staffList.ColumnHeadersHeight = 50;
-            this.staffList.Location = new System.Drawing.Point(0, 0);
+            this.staffList.Location = new System.Drawing.Point(3, 12);
             this.staffList.Name = "staffList";
             this.staffList.RowHeadersWidth = 51;
             this.staffList.RowTemplate.Height = 24;
-            this.staffList.Size = new System.Drawing.Size(623, 716);
+            this.staffList.Size = new System.Drawing.Size(615, 716);
             this.staffList.TabIndex = 0;
             // 
             // panel2
