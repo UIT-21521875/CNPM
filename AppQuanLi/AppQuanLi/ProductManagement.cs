@@ -17,7 +17,7 @@ namespace AppQuanLi
         {
             InitializeComponent();
             loadProductList();
-            AddFoodBinding();
+            AddProductBinding();
         }
         void loadProductList()
         {
@@ -40,9 +40,10 @@ namespace AppQuanLi
             connection.Close();
 
             ProductList.DataSource = data;
+            
 
         }
-        void AddFoodBinding()
+        void AddProductBinding()
         {
             tb_tensp.DataBindings.Add(new Binding("Text", ProductList.DataSource, "TENSP"));
             tb_masp.DataBindings.Add(new Binding("Text", ProductList.DataSource, "MASP"));

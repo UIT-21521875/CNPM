@@ -18,6 +18,8 @@ namespace AppQuanLi
             InitializeComponent();
 
             loadStaffList();
+
+            AddStaffBinding();
         }
         void loadStaffList()
         {
@@ -25,7 +27,7 @@ namespace AppQuanLi
 
 
             SqlConnection connection = new SqlConnection(connectionSTR);
-            string query = "select * from NHANVIEN";
+            string query = "SELECT NV.*, TT.HOTEN, TT.SODT, TT.DIACHI,TT.NGSINH\r\nFROM NHANVIEN NV\r\nJOIN THONGTIN TT ON NV.MATT = TT.MATT;";
 
             connection.Open();
 
@@ -40,6 +42,17 @@ namespace AppQuanLi
             connection.Close();
             
             staffList.DataSource = data;
+        }
+        void AddStaffBinding()
+        {
+            tb_hoten.DataBindings.Add(new Binding("Text", staffList.DataSource, "HOTEN"));
+            tb_manv.DataBindings.Add(new Binding("Text", staffList.DataSource, "MANV"));
+            tb_ngaysinh.DataBindings.Add(new Binding("Text", staffList.DataSource, "NGSINH"));
+            tb_sdt.DataBindings.Add(new Binding("Text", staffList.DataSource, "SODT"));
+            tb_chucvu.DataBindings.Add(new Binding("Text", staffList.DataSource, "CHUCVU"));
+            tb_tinhtrang.DataBindings.Add(new Binding("Text", staffList.DataSource, "TINHTRANG"));
+            tb_diachi.DataBindings.Add(new Binding("Text", staffList.DataSource, "DIACHI"));
+            tb_ngaybdl.DataBindings.Add(new Binding("Text", staffList.DataSource, "NGBDL"));
         }
 
         private void btn_timkiem_Click(object sender, EventArgs e)
