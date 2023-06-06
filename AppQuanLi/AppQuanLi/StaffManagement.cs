@@ -65,10 +65,6 @@ namespace AppQuanLi
             i.ShowDialog();
         }
 
-        private void btn_xemthongtin_Click(object sender, EventArgs e)
-        {
-            StaffInfor s = new StaffInfor();
-            s.ShowDialog();
-        }
+        
     }
 }

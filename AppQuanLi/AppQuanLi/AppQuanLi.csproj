@@ -95,12 +95,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="StaffInfor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StaffInfor.Designer.cs">
-      <DependentUpon>StaffInfor.cs</DependentUpon>
-    </Compile>
     <Compile Include="StaffManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,9 +158,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StaffInfor.resx">
-      <DependentUpon>StaffInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffManagement.resx">
       <DependentUpon>StaffManagement.cs</DependentUpon>

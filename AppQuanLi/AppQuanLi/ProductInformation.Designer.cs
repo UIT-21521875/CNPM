@@ -272,7 +272,7 @@
             this.tb_masp.Multiline = true;
             this.tb_masp.Name = "tb_masp";
             this.tb_masp.ReadOnly = true;
-            this.tb_masp.Size = new System.Drawing.Size(227, 43);
+            this.tb_masp.Size = new System.Drawing.Size(227, 32);
             this.tb_masp.TabIndex = 54;
             this.tb_masp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
