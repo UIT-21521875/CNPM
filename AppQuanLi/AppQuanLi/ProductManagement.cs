@@ -68,5 +68,10 @@ namespace AppQuanLi
             AddProductInfor i = new AddProductInfor();
             i.ShowDialog();
         }
+
+        private void tb_ngayphathanh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
