@@ -17,14 +17,15 @@ namespace AppQuanLi
         {
             InitializeComponent();
             loadProductList();
+            AddFoodBinding();
         }
         void loadProductList()
         {
-            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
+            string connectionSTR = "Data Source=LAPTOP-98F0GEC3;Initial Catalog=CNPM;Integrated Security=True";
 
 
             SqlConnection connection = new SqlConnection(connectionSTR);
-            string query = "SELECT MASP, TENSP, NENTANG, GIATHUE\r\nFROM SANPHAM";
+            string query = "SELECT SP.*, TL.TENTL, TT.TRANGTHAI\r\nFROM SANPHAM SP\r\nJOIN KHO K ON SP.MASP = K.MASP\r\nJOIN THELOAI TL ON SP.MATL = TL.MATL\r\nJOIN TINHTRANGSP TT ON K.MATTSP = TT.MATTSP;";
 
             connection.Open();
 
@@ -41,5 +42,16 @@ namespace AppQuanLi
             ProductList.DataSource = data;
 
         }
+        void AddFoodBinding()
+        {
+            tb_tensp.DataBindings.Add(new Binding("Text", ProductList.DataSource, "TENSP"));
+            tb_masp.DataBindings.Add(new Binding("Text", ProductList.DataSource, "MASP"));
+            tb_nhaphathanh.DataBindings.Add(new Binding("Text", ProductList.DataSource, "NHAPH"));
+            tb_ngayphathanh.DataBindings.Add(new Binding("Text", ProductList.DataSource, "NGPH"));
+            tb_tinhtrang.DataBindings.Add(new Binding("Text", ProductList.DataSource, "TRANGTHAI"));
+            tb_theloai.DataBindings.Add(new Binding("Text", ProductList.DataSource, "TENTL"));
+            tb_giathue.DataBindings.Add(new Binding("Text", ProductList.DataSource, "GIATHUE"));
+        }
+
     }
 }
