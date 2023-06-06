@@ -117,7 +117,7 @@
             this.btn_chinhsua.Name = "btn_chinhsua";
             this.btn_chinhsua.Size = new System.Drawing.Size(197, 78);
             this.btn_chinhsua.TabIndex = 18;
-            this.btn_chinhsua.Text = "Xem thông tin";
+            this.btn_chinhsua.Text = "Chỉnh sửa";
             this.btn_chinhsua.UseVisualStyleBackColor = false;
             // 
             // btn_themnhanvien
