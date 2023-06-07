@@ -97,6 +97,12 @@
     <Compile Include="AddStaffInfor.Designer.cs">
       <DependentUpon>AddStaffInfor.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoiceManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceManagement.Designer.cs">
+      <DependentUpon>InvoiceManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddStaffInfor.resx">
       <DependentUpon>AddStaffInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceManagement.resx">
+      <DependentUpon>InvoiceManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

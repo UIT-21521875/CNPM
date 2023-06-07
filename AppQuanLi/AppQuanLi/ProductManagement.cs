@@ -53,6 +53,5 @@ namespace AppQuanLi
             tb_theloai.DataBindings.Add(new Binding("Text", ProductList.DataSource, "TENTL"));
             tb_giathue.DataBindings.Add(new Binding("Text", ProductList.DataSource, "GIATHUE"));
         }
-
     }
 }

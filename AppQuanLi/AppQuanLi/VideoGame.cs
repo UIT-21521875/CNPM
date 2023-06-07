@@ -68,7 +68,7 @@ namespace AppQuanLi
 
         private void btn_sell_Click(object sender, EventArgs e)
         {
-
+            showForm(new InvoiceManagement());
         }
 
         private void btn_voucher_Click(object sender, EventArgs e)
