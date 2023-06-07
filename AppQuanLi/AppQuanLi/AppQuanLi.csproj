@@ -65,6 +65,8 @@
     <Compile Include="CustomerManagement.Designer.cs">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataProvider\DataProvidercs.cs" />
+    <Compile Include="DataProvider\Funtion.cs" />
     <Compile Include="EditCusInfor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +178,7 @@
     <EmbeddedResource Include="VideoGame.resx">
       <DependentUpon>VideoGame.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -72,3 +72,4 @@ C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.AddProductInfor.resources
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.AddStaffInfor.resources
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductManagement.resources
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config

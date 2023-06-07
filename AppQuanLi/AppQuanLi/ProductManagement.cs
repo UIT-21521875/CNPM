@@ -21,13 +21,13 @@ namespace AppQuanLi
         }
         void loadProductList()
         {
-            string connectionSTR = "Data Source=LAPTOP-98F0GEC3;Initial Catalog=CNPM;Integrated Security=True";
+            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
 
 
             SqlConnection connection = new SqlConnection(connectionSTR);
             string query = "SELECT SP.*, TL.TENTL, TT.TRANGTHAI\r\nFROM SANPHAM SP\r\nJOIN KHO K ON SP.MASP = K.MASP\r\nJOIN THELOAI TL ON SP.MATL = TL.MATL\r\nJOIN TINHTRANGSP TT ON K.MATTSP = TT.MATTSP;";
 
-            connection.Open();
+             connection.Open();
 
             SqlCommand command = new SqlCommand(query, connection);
 
