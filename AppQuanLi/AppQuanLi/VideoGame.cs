@@ -48,7 +48,7 @@ namespace AppQuanLi
 
         private void btn_staff_Click(object sender, EventArgs e)
         {
-            showForm (new StaffManagement());
+            showForm(new StaffManagement());
         }
 
         private void btn_customer_Click(object sender, EventArgs e)
