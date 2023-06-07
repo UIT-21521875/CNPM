@@ -718,6 +718,64 @@ VALUES
 (38, 43),
 (39, 44);
 
-
+-- Insert KHO
+INSERT INTO KHO (MAKHO, MASP, MATTSP, SOLUONG)
+VALUES
+(1, 'SP000001', 1, 10),
+(2, 'SP000003', 2, 10),
+(3, 'SP000004', 3, 10),
+(4, 'SP000005', 4, 10),
+(5, 'SP000006', 5, 10),
+(6, 'SP000007', 6, 10),
+(7, 'SP000008', 7, 10),
+(8, 'SP000009', 8, 10),
+(9, 'SP000010', 9, 10),
+(10, 'SP000011', 10, 10),
+(11, 'SP000013', 11, 10),
+(12, 'SP000015', 12, 10),
+(13, 'SP000017', 13, 10),
+(14, 'SP000020', 14, 10),
+(15, 'SP000022', 15, 10),
+(16, 'SP000023', 16, 10),
+(17, 'SP000024', 17, 10),
+(18, 'SP000025', 18, 10),
+(19, 'SP000026', 19, 10),
+(20, 'SP000027', 20, 10),
+(21, 'SP000039', 21, 10);
+-- Insert TINHTRANGSP
+INSERT INTO TINHTRANGSP (MATTSP, TRANGTHAI)
+VALUES
+(1, 'Available'),
+(2, 'Available'),
+(3, 'Available'),
+(4, 'Available'),
+(5, 'Available'),
+(6, 'Available'),
+(7, 'Available'),
+(8, 'Available'),
+(9, 'Available'),
+(10, 'Available'),
+(11, 'Available'),
+(12, 'Available'),
+(13, 'Available'),
+(14, 'Available'),
+(15, 'Available'),
+(16, 'Available'),
+(17, 'Available'),
+(18, 'Available'),
+(19, 'Available'),
+(20, 'Available'),
+(21, 'Available');
+SELECT * FROM SANPHAM
+SELECT * FROM TINHTRANGSP
 SELECT * FROM KHACHHANG
 SELECT * FROM THONGTIN
+SELECT * FROM NHANVIEN
+
+SELECT KH.MAKH, KH.DIEMTICH, TT.HOTEN, TT.SODT, TT.DIACHI,TT.NGSINH, TT.CCCD, TT.EMAIL
+FROM KHACHHANG NV
+JOIN THONGTIN TT ON KH.MATT = TT.MATT;
+
+SELECT KH.MAKH, KH.DIEMTICH, TT.HOTEN, TT.SODT, TT.DIACHI, TT.NGSINH, TT.CCCD, TT.EMAIL
+FROM KHACHHANG KH
+JOIN THONGTIN TT ON KH.MATT = TT.MATT;
