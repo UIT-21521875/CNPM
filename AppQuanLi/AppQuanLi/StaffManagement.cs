@@ -25,7 +25,7 @@ namespace AppQuanLi
         }
         void loadStaffList()
         {
-            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
+            string connectionSTR = "Data Source=LAPTOP-98F0GEC3;Initial Catalog=CNPM;Integrated Security=True";
 
 
             SqlConnection connection = new SqlConnection(connectionSTR);
