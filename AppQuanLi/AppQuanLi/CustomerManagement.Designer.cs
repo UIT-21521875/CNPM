@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_themkhachhang = new System.Windows.Forms.Button();
+            this.btn_luu = new System.Windows.Forms.Button();
             this.btn_chinhsua = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.CustomerList = new System.Windows.Forms.DataGridView();
             this.tb_timkiem = new System.Windows.Forms.TextBox();
             this.btn_timkiem = new System.Windows.Forms.Button();
-            this.btn_luu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomerList)).BeginInit();
@@ -152,6 +152,21 @@
             this.btn_themkhachhang.UseVisualStyleBackColor = false;
             this.btn_themkhachhang.Click += new System.EventHandler(this.btn_themkhachhang_Click);
             // 
+            // btn_luu
+            // 
+            this.btn_luu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_luu.BackColor = System.Drawing.Color.Violet;
+            this.btn_luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.Location = new System.Drawing.Point(239, 559);
+            this.btn_luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(197, 63);
+            this.btn_luu.TabIndex = 22;
+            this.btn_luu.Text = "Lưu";
+            this.btn_luu.UseVisualStyleBackColor = false;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
+            // 
             // btn_chinhsua
             // 
             this.btn_chinhsua.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -194,7 +209,7 @@
             this.tb_hotenkh.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_hotenkh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_hotenkh.Location = new System.Drawing.Point(209, 102);
-            this.tb_hotenkh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_hotenkh.Margin = new System.Windows.Forms.Padding(4);
             this.tb_hotenkh.Multiline = true;
             this.tb_hotenkh.Name = "tb_hotenkh";
             this.tb_hotenkh.Size = new System.Drawing.Size(227, 43);
@@ -219,7 +234,7 @@
             this.tb_makh.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_makh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_makh.Location = new System.Drawing.Point(209, 164);
-            this.tb_makh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_makh.Margin = new System.Windows.Forms.Padding(4);
             this.tb_makh.Multiline = true;
             this.tb_makh.Name = "tb_makh";
             this.tb_makh.Size = new System.Drawing.Size(227, 43);
@@ -244,7 +259,7 @@
             this.tb_sdt.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_sdt.Location = new System.Drawing.Point(209, 266);
-            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4);
             this.tb_sdt.Multiline = true;
             this.tb_sdt.Name = "tb_sdt";
             this.tb_sdt.Size = new System.Drawing.Size(227, 43);
@@ -269,7 +284,7 @@
             this.tb_ngaysinh.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_ngaysinh.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_ngaysinh.Location = new System.Drawing.Point(209, 215);
-            this.tb_ngaysinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_ngaysinh.Margin = new System.Windows.Forms.Padding(4);
             this.tb_ngaysinh.Multiline = true;
             this.tb_ngaysinh.Name = "tb_ngaysinh";
             this.tb_ngaysinh.Size = new System.Drawing.Size(227, 43);
@@ -294,7 +309,7 @@
             this.tb_cccd.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_cccd.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_cccd.Location = new System.Drawing.Point(209, 327);
-            this.tb_cccd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_cccd.Margin = new System.Windows.Forms.Padding(4);
             this.tb_cccd.Multiline = true;
             this.tb_cccd.Name = "tb_cccd";
             this.tb_cccd.Size = new System.Drawing.Size(227, 43);
@@ -309,7 +324,7 @@
             this.tb_email.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_email.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_email.Location = new System.Drawing.Point(209, 389);
-            this.tb_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_email.Margin = new System.Windows.Forms.Padding(4);
             this.tb_email.Multiline = true;
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(227, 43);
@@ -324,7 +339,7 @@
             this.tb_diem.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_diem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_diem.Location = new System.Drawing.Point(209, 510);
-            this.tb_diem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_diem.Margin = new System.Windows.Forms.Padding(4);
             this.tb_diem.Multiline = true;
             this.tb_diem.Name = "tb_diem";
             this.tb_diem.Size = new System.Drawing.Size(227, 43);
@@ -339,7 +354,7 @@
             this.tb_diachi.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_diachi.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_diachi.Location = new System.Drawing.Point(209, 449);
-            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.tb_diachi.Multiline = true;
             this.tb_diachi.Name = "tb_diachi";
             this.tb_diachi.Size = new System.Drawing.Size(227, 43);
@@ -363,7 +378,7 @@
             // tb_timkiem
             // 
             this.tb_timkiem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tb_timkiem.Location = new System.Drawing.Point(13, 62);
+            this.tb_timkiem.Location = new System.Drawing.Point(24, 42);
             this.tb_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_timkiem.Multiline = true;
             this.tb_timkiem.Name = "tb_timkiem";
@@ -377,28 +392,13 @@
             this.btn_timkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_timkiem.ForeColor = System.Drawing.Color.Black;
-            this.btn_timkiem.Location = new System.Drawing.Point(443, 39);
+            this.btn_timkiem.Location = new System.Drawing.Point(442, 23);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(168, 55);
             this.btn_timkiem.TabIndex = 14;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
-            // 
-            // btn_luu
-            // 
-            this.btn_luu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_luu.BackColor = System.Drawing.Color.Violet;
-            this.btn_luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luu.Location = new System.Drawing.Point(239, 559);
-            this.btn_luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(197, 63);
-            this.btn_luu.TabIndex = 22;
-            this.btn_luu.Text = "Lưu";
-            this.btn_luu.UseVisualStyleBackColor = false;
-            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // CustomerManagement
             // 
@@ -412,6 +412,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomerManagement";
             this.Text = "CustomerManagement";
+            this.Load += new System.EventHandler(this.CustomerManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -25,7 +25,7 @@ namespace AppQuanLi
         }
         void loadCustomerList()
         {
-            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
+            string connectionSTR = "Data Source=LAPTOP-98F0GEC3;Initial Catalog=CNPM;Integrated Security=True";
 
 
             SqlConnection connection = new SqlConnection(connectionSTR);
@@ -149,6 +149,11 @@ namespace AppQuanLi
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CustomerManagement_Load(object sender, EventArgs e)
         {
 
         }

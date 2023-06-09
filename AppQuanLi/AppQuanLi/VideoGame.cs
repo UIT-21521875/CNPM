@@ -63,7 +63,7 @@ namespace AppQuanLi
 
         private void btn_gara_Click(object sender, EventArgs e)
         {
-
+            showForm(new StorageManagement());
         }
 
         private void btn_sell_Click(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace AppQuanLi
 
         private void btn_voucher_Click(object sender, EventArgs e)
         {
-
+            showForm(new UDManagement());
         }
 
         private void btn_point_Click(object sender, EventArgs e)
@@ -83,12 +83,12 @@ namespace AppQuanLi
 
         private void btn_target_Click(object sender, EventArgs e)
         {
-
+            showForm(new ReportManagement());
         }
 
         private void btn_care_Click(object sender, EventArgs e)
         {
-
+            showForm(new CareManagement());
         }
 
         private void btn_logout_Click(object sender, EventArgs e)

@@ -75,3 +75,7 @@ C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffManagement.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\bin\Debug\AppQuanLi.exe.config
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.InvoiceManagement.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.UDManagement.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.CareManagement.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ReportManagement.resources
+C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StorageManagement.resources
