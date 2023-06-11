@@ -1,0 +1,15 @@
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\bin\Debug\QuanLyVideoGame.exe.config
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\bin\Debug\QuanLyVideoGame.exe
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\bin\Debug\QuanLyVideoGame.pdb
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.csproj.AssemblyReference.cache
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.csproj.SuggestedBindingRedirects.cache
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Properties.Resources.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.csproj.GenerateResource.cache
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.csproj.CoreCompileInputs.cache
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.exe
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.pdb
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Login.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Customer.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.staff.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Videogamecs.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.product.resources

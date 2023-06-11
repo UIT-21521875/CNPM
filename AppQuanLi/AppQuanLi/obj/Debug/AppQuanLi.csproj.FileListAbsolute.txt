@@ -53,7 +53,6 @@ C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.AssemblyReference.ca
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.csproj.SuggestedBindingRedirects.cache
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.EditProductInfor.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.EditStaffInfor.resources
-C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Login.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ProductInformation.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Properties.Resources.resources
 C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StaffInfor.resources
@@ -79,3 +78,9 @@ C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.UDManagement.resources
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.CareManagement.resources
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ReportManagement.resources
 C:\tmp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StorageManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.CareManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.InvoiceManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.ReportManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.StorageManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.UDManagement.resources
+C:\temp\CNPM\AppQuanLi\AppQuanLi\obj\Debug\AppQuanLi.Login1.resources

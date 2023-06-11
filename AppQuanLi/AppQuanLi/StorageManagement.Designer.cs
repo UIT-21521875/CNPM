@@ -71,7 +71,7 @@
             this.cb_mucgia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cb_mucgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_mucgia.FormattingEnabled = true;
-            this.cb_mucgia.Location = new System.Drawing.Point(185, 58);
+            this.cb_mucgia.Location = new System.Drawing.Point(185, 56);
             this.cb_mucgia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_mucgia.Name = "cb_mucgia";
             this.cb_mucgia.Size = new System.Drawing.Size(168, 28);
@@ -84,7 +84,7 @@
             this.btn_timkiem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btn_timkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_timkiem.Location = new System.Drawing.Point(533, 27);
+            this.btn_timkiem.Location = new System.Drawing.Point(533, 25);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(93, 59);
@@ -271,7 +271,7 @@
             this.cb_ngaynhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cb_ngaynhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_ngaynhap.FormattingEnabled = true;
-            this.cb_ngaynhap.Location = new System.Drawing.Point(11, 58);
+            this.cb_ngaynhap.Location = new System.Drawing.Point(11, 56);
             this.cb_ngaynhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_ngaynhap.Name = "cb_ngaynhap";
             this.cb_ngaynhap.Size = new System.Drawing.Size(168, 28);
@@ -337,7 +337,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ProductList.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ProductList.Location = new System.Drawing.Point(11, 110);
+            this.ProductList.Location = new System.Drawing.Point(11, 108);
             this.ProductList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProductList.Name = "ProductList";
             this.ProductList.ReadOnly = true;
@@ -351,7 +351,7 @@
             // tb_timkiem
             // 
             this.tb_timkiem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tb_timkiem.Location = new System.Drawing.Point(11, 27);
+            this.tb_timkiem.Location = new System.Drawing.Point(11, 25);
             this.tb_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_timkiem.Multiline = true;
             this.tb_timkiem.Name = "tb_timkiem";
@@ -436,7 +436,7 @@
             this.cb_tinhtrangkho.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cb_tinhtrangkho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tinhtrangkho.FormattingEnabled = true;
-            this.cb_tinhtrangkho.Location = new System.Drawing.Point(357, 58);
+            this.cb_tinhtrangkho.Location = new System.Drawing.Point(357, 56);
             this.cb_tinhtrangkho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_tinhtrangkho.Name = "cb_tinhtrangkho";
             this.cb_tinhtrangkho.Size = new System.Drawing.Size(168, 28);
@@ -456,10 +456,10 @@
             this.panel1.Controls.Add(this.cb_mucgia);
             this.panel1.Controls.Add(this.cb_ngaynhap);
             this.panel1.Controls.Add(this.btn_timkiem);
-            this.panel1.Location = new System.Drawing.Point(1, -1);
+            this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1081, 732);
+            this.panel1.Size = new System.Drawing.Size(1081, 729);
             this.panel1.TabIndex = 1;
             // 
             // StorageManagement
