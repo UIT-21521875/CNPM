@@ -19,7 +19,7 @@ namespace AppQuanLi
         }
         private void showForm (object Form)
         {
-            if (this.pn_show.Controls.Count > 0)
+            while (this.pn_show.Controls.Count > 0)
             {
                 this.pn_show.Controls.RemoveAt(0);
             }
@@ -30,22 +30,7 @@ namespace AppQuanLi
             this.pn_show.Controls.Add(form);
             form.Show();
         }
-        private void Menu_Click(object sender, EventArgs e)
-        {
-            if (pn_button.Visible == true)
-            {
-                pn_button.Visible = false;
-                pb_menu.Visible = false;
-                pn_icon.Visible = true;
-            }
-            else
-            {
-                pn_icon.Visible = false;
-                pn_button.Visible= true;
-                pb_menu.Visible= true;
-            }
-        }
-
+        
         private void btn_staff_Click(object sender, EventArgs e)
         {
             showForm(new StaffManagement());
@@ -97,7 +82,7 @@ namespace AppQuanLi
             DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất", "Thông báo", MessageBoxButtons.YesNo);
             if(result == DialogResult.Yes)
             {
-                Login l = new Login();
+                Login1 l = new Login1();
                 this.Hide();
                 l.ShowDialog();
             }
