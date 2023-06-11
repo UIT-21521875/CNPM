@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace QuanLyVideoGame
 {
@@ -85,6 +87,7 @@ namespace QuanLyVideoGame
             tb_ngaysinh.Enabled = true;
             tb_cccd.Enabled = true;
             tb_email.Enabled = true;
+            tb_matt.Enabled = true;
             btn_chinhsua.Visible = false;
          
             btn_themkh.Visible = false;
@@ -109,6 +112,7 @@ namespace QuanLyVideoGame
             tb_ngaysinh.Text="";
             tb_cccd.Text="";
             tb_email.Text ="";
+            tb_matt.Text = "";
 
         }
 
@@ -164,7 +168,7 @@ namespace QuanLyVideoGame
 
 
 
-            sql = "INSERT INTO KHACHHANG KH JOIN THONGTIN TT ON KH.MATT = TT.MATT VALUES(N'" + tb_diem.Text + "',N'" + tb_hoten.Text + "',N'" + tb_sdt.Text + "',N'" + tb_diachi.Text + "',N'" + tb_ngaysinh.Text + "', N'" + tb_cccd.Text + "', N'" + tb_email.Text + "')";
+            sql = "BEGIN TRANSACTION;\r\nINSERT INTO THONGTIN (HOTEN, SODT, DIACHI, NGSINH, CCCD, EMAIL, MATT) VALUES(N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + tb_diachi.Text + "', N'" + tb_ngaysinh.Text + "', N'" + tb_cccd.Text + "', N'" + tb_email.Text + "', N'" + tb_matt.Text + "')\r\nINSERT INTO KHACHHANG(MAKH, DIEMTICH, MATT)VALUES(N'" + tb_ma.Text + "', N'" + tb_diem.Text + "', N'" + tb_matt.Text + "');\r\nCOMMIT;";
             Class.Funtion.RunSQL(sql); //Thực hiện câu lệnh sql
             loadDataGRV(); //Nạp lại DataGridView
             ResetValue();
@@ -173,6 +177,11 @@ namespace QuanLyVideoGame
             btn_huy.Enabled = false;
             btn_luu.Visible = false;
             tb_ma.Visible = false;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

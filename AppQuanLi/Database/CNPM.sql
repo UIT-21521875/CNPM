@@ -370,15 +370,22 @@ END;
 -- Tạo trigger tự động tạo mã thông tin (MATT) duy nhất khi thêm mới một thể loại vào bảng THONGTIN
 CREATE TRIGGER TR_THONGTIN_INSERT
 ON THONGTIN
-AFTER INSERT
+INSTEAD OF INSERT
 AS
 BEGIN
+    SET NOCOUNT ON;
+
     DECLARE @next_matt INT;
     SET @next_matt = (SELECT ISNULL(MAX(MATT), 0) FROM THONGTIN) + 1;
-    UPDATE THONGTIN
-    SET MATT = @next_matt
-    WHERE MATT IS NULL;
+
+    INSERT INTO THONGTIN (MATT, CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI)
+    SELECT @next_matt, CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI
+    FROM inserted;
 END;
+IF EXISTS (SELECT 1 FROM sys.triggers WHERE name = 'TR_THONGTIN_INSERT')
+    DROP TRIGGER TR_THONGTIN_INSERT;
+GO
+
 -- Tạo trigger tự động tạo mã chăm sóc khách hàng (MACSKH) duy nhất khi thêm mới một thể loại vào bảng PHIEUCSKH
 CREATE TRIGGER TR_PHIEUCSKH_INSERT
 ON PHIEUCSKH
@@ -831,12 +838,19 @@ INNER JOIN THONGTIN KH_THONGTIN ON KH.MATT = KH_THONGTIN.MATT;
 
 
 
+BEGIN TRANSACTION;
+INSERT INTO KHACHHANG(MAKH, DIEMTICH, MATT)VALUES(N'" + tb_makh.Text + "', N'" + tb_diem.Text + "', N'" + tb_matt.Text + "');
+INSERT INTO THONGTIN(HOTEN, SODT, DIACHI, NGSINH, CCCD, EMAIL, MATT)
+VALUES(N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + tb_diachi.Text + "', N'" + tb_ngsinh.Text + "', N'" + tb_cccd.Text + "', N'" + tb_email.Text + "', N'" + tb_matt.Text + "');
+COMMIT;
 
 
 
+INSERT INTO THONGTIN (CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI)
+VALUES ('123456789', 'John Doe', '1234567890', '1990-01-01', 'johndoe@example.com', '123 Main St');
 
-
-
+insert into KHACHHANG (MAKH, MATT) VALUES (205,82)
+SELECT * FROM thongtin
 
 
 SELECT KH.MAKH, KH.DIEMTICH, TT.HOTEN, TT.SODT, TT.DIACHI, TT.NGSINH, TT.CCCD, TT.EMAIL FROM KHACHHANG KH JOIN THONGTIN TT ON KH.MATT = TT.MATT
