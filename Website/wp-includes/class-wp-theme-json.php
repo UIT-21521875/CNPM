@@ -66,13 +66,15 @@ class WP_Theme_JSON {
 	 *
 	 * They are a unkeyed array of values such as:
 	 *
-	 *     array(
-	 *       array(
-	 *         'slug'      => 'unique-name-within-the-set',
-	 *         'name'      => 'Name for the UI',
-	 *         <value_key> => 'value'
-	 *       ),
-	 *     )
+	 * ```php
+	 * array(
+	 *   array(
+	 *     'slug'      => 'unique-name-within-the-set',
+	 *     'name'      => 'Name for the UI',
+	 *     <value_key> => 'value'
+	 *   ),
+	 * )
+	 * ```
 	 *
 	 * This contains the necessary metadata to process them:
 	 *
@@ -2529,17 +2531,19 @@ class WP_Theme_JSON {
 	/**
 	 * For metadata values that can either be booleans or paths to booleans, gets the value.
 	 *
-	 *     $data = array(
-	 *       'color' => array(
-	 *         'defaultPalette' => true
-	 *       )
-	 *     );
+	 * ```php
+	 * $data = array(
+	 *   'color' => array(
+	 *     'defaultPalette' => true
+	 *   )
+	 * );
 	 *
-	 *     static::get_metadata_boolean( $data, false );
-	 *     // => false
+	 * static::get_metadata_boolean( $data, false );
+	 * // => false
 	 *
-	 *     static::get_metadata_boolean( $data, array( 'color', 'defaultPalette' ) );
-	 *     // => true
+	 * static::get_metadata_boolean( $data, array( 'color', 'defaultPalette' ) );
+	 * // => true
+	 * ```
 	 *
 	 * @since 6.0.0
 	 *
