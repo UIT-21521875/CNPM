@@ -10,7 +10,6 @@ C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.exe
 C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.pdb
 C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Login.resources
 C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Customer.resources
-C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.staff.resources
 C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Videogamecs.resources
 C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.product.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\bin\Debug\QuanLyVideoGame.exe.config

@@ -34,8 +34,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_diem = new System.Windows.Forms.Label();
+            this.lb_ma = new System.Windows.Forms.Label();
             this.tb_email = new System.Windows.Forms.TextBox();
             this.tb_cccd = new System.Windows.Forms.TextBox();
             this.tb_ngaysinh = new System.Windows.Forms.TextBox();
@@ -47,12 +47,12 @@
             this.btn_chinhsua = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_huy = new System.Windows.Forms.Button();
-            this.btn_luu = new System.Windows.Forms.Button();
             this.btn_themkh = new System.Windows.Forms.Button();
             this.cusList = new System.Windows.Forms.DataGridView();
             this.btn_customer = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lb_matt = new System.Windows.Forms.Label();
             this.tb_matt = new System.Windows.Forms.TextBox();
+            this.btn_luu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cusList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +62,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(637, 321);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 23);
+            this.label6.Size = new System.Drawing.Size(56, 19);
             this.label6.TabIndex = 64;
             this.label6.Text = "Địa chỉ";
             // 
@@ -72,7 +72,7 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(637, 386);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 23);
+            this.label7.Size = new System.Drawing.Size(76, 19);
             this.label7.TabIndex = 63;
             this.label7.Text = "Ngày sinh";
             // 
@@ -82,7 +82,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(637, 509);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 23);
+            this.label8.Size = new System.Drawing.Size(47, 19);
             this.label8.TabIndex = 62;
             this.label8.Text = "Email";
             // 
@@ -92,7 +92,7 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(637, 445);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 23);
+            this.label5.Size = new System.Drawing.Size(54, 19);
             this.label5.TabIndex = 61;
             this.label5.Text = "CCCD";
             // 
@@ -102,7 +102,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(637, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 23);
+            this.label4.Size = new System.Drawing.Size(54, 19);
             this.label4.TabIndex = 60;
             this.label4.Text = "Họ tên";
             // 
@@ -112,36 +112,37 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(637, 263);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 23);
+            this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 59;
             this.label3.Text = "Số điện thoại";
             // 
-            // label2
+            // lb_diem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(637, 161);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 23);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Điểm";
+            this.lb_diem.AutoSize = true;
+            this.lb_diem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_diem.Location = new System.Drawing.Point(637, 161);
+            this.lb_diem.Name = "lb_diem";
+            this.lb_diem.Size = new System.Drawing.Size(45, 19);
+            this.lb_diem.TabIndex = 58;
+            this.lb_diem.Text = "Điểm";
             // 
-            // label1
+            // lb_ma
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(637, 104);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 23);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Mã khách hàng";
+            this.lb_ma.AutoSize = true;
+            this.lb_ma.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ma.Location = new System.Drawing.Point(637, 104);
+            this.lb_ma.Name = "lb_ma";
+            this.lb_ma.Size = new System.Drawing.Size(113, 19);
+            this.lb_ma.TabIndex = 57;
+            this.lb_ma.Text = "Mã khách hàng";
             // 
             // tb_email
             // 
             this.tb_email.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_email.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_email.Location = new System.Drawing.Point(837, 493);
-            this.tb_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_email.Margin = new System.Windows.Forms.Padding(4);
             this.tb_email.Multiline = true;
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(227, 43);
@@ -152,8 +153,9 @@
             // 
             this.tb_cccd.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_cccd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cccd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_cccd.Location = new System.Drawing.Point(837, 431);
-            this.tb_cccd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_cccd.Margin = new System.Windows.Forms.Padding(4);
             this.tb_cccd.Multiline = true;
             this.tb_cccd.Name = "tb_cccd";
             this.tb_cccd.Size = new System.Drawing.Size(227, 43);
@@ -164,8 +166,9 @@
             // 
             this.tb_ngaysinh.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_ngaysinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_ngaysinh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_ngaysinh.Location = new System.Drawing.Point(837, 370);
-            this.tb_ngaysinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_ngaysinh.Margin = new System.Windows.Forms.Padding(4);
             this.tb_ngaysinh.Multiline = true;
             this.tb_ngaysinh.Name = "tb_ngaysinh";
             this.tb_ngaysinh.Size = new System.Drawing.Size(227, 43);
@@ -176,8 +179,9 @@
             // 
             this.tb_diachi.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_diachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_diachi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_diachi.Location = new System.Drawing.Point(837, 308);
-            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.tb_diachi.Multiline = true;
             this.tb_diachi.Name = "tb_diachi";
             this.tb_diachi.Size = new System.Drawing.Size(227, 43);
@@ -188,8 +192,9 @@
             // 
             this.tb_hoten.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_hoten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_hoten.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_hoten.Location = new System.Drawing.Point(837, 196);
-            this.tb_hoten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_hoten.Margin = new System.Windows.Forms.Padding(4);
             this.tb_hoten.Multiline = true;
             this.tb_hoten.Name = "tb_hoten";
             this.tb_hoten.Size = new System.Drawing.Size(227, 43);
@@ -200,8 +205,9 @@
             // 
             this.tb_sdt.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_sdt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_sdt.Location = new System.Drawing.Point(837, 247);
-            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4);
             this.tb_sdt.Multiline = true;
             this.tb_sdt.Name = "tb_sdt";
             this.tb_sdt.Size = new System.Drawing.Size(227, 43);
@@ -212,8 +218,9 @@
             // 
             this.tb_diem.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_diem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_diem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_diem.Location = new System.Drawing.Point(837, 145);
-            this.tb_diem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_diem.Margin = new System.Windows.Forms.Padding(4);
             this.tb_diem.Multiline = true;
             this.tb_diem.Name = "tb_diem";
             this.tb_diem.Size = new System.Drawing.Size(227, 43);
@@ -224,8 +231,9 @@
             // 
             this.tb_ma.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_ma.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_ma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_ma.Location = new System.Drawing.Point(837, 84);
-            this.tb_ma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_ma.Margin = new System.Windows.Forms.Padding(4);
             this.tb_ma.Multiline = true;
             this.tb_ma.Name = "tb_ma";
             this.tb_ma.Size = new System.Drawing.Size(227, 43);
@@ -264,7 +272,7 @@
             this.btn_huy.BackColor = System.Drawing.Color.Violet;
             this.btn_huy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_huy.Location = new System.Drawing.Point(705, 583);
+            this.btn_huy.Location = new System.Drawing.Point(689, 630);
             this.btn_huy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_huy.Name = "btn_huy";
             this.btn_huy.Size = new System.Drawing.Size(181, 62);
@@ -272,21 +280,7 @@
             this.btn_huy.Text = "Hủy";
             this.btn_huy.UseVisualStyleBackColor = false;
             this.btn_huy.Visible = false;
-            // 
-            // btn_luu
-            // 
-            this.btn_luu.BackColor = System.Drawing.Color.Violet;
-            this.btn_luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luu.Location = new System.Drawing.Point(892, 583);
-            this.btn_luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(181, 62);
-            this.btn_luu.TabIndex = 48;
-            this.btn_luu.Text = "Lưu";
-            this.btn_luu.UseVisualStyleBackColor = false;
-            this.btn_luu.Visible = false;
-            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
+            this.btn_huy.Click += new System.EventHandler(this.btn_huy_Click);
             // 
             // btn_themkh
             // 
@@ -330,21 +324,21 @@
             this.btn_customer.Text = "Khách hàng";
             this.btn_customer.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // lb_matt
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(637, 555);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 23);
-            this.label9.TabIndex = 66;
-            this.label9.Text = "Mã thông tin";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.lb_matt.AutoSize = true;
+            this.lb_matt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_matt.Location = new System.Drawing.Point(637, 555);
+            this.lb_matt.Name = "lb_matt";
+            this.lb_matt.Size = new System.Drawing.Size(95, 19);
+            this.lb_matt.TabIndex = 66;
+            this.lb_matt.Text = "Mã thông tin";
             // 
             // tb_matt
             // 
             this.tb_matt.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tb_matt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_matt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_matt.Location = new System.Drawing.Point(837, 544);
             this.tb_matt.Margin = new System.Windows.Forms.Padding(4);
             this.tb_matt.Multiline = true;
@@ -353,6 +347,20 @@
             this.tb_matt.TabIndex = 67;
             this.tb_matt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btn_luu
+            // 
+            this.btn_luu.BackColor = System.Drawing.Color.Violet;
+            this.btn_luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.Location = new System.Drawing.Point(876, 630);
+            this.btn_luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(181, 62);
+            this.btn_luu.TabIndex = 46;
+            this.btn_luu.Text = "Lưu";
+            this.btn_luu.UseVisualStyleBackColor = false;
+            this.btn_luu.Visible = false;
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -360,7 +368,7 @@
             this.BackgroundImage = global::QuanLyVideoGame.Properties.Resources.Untitled_design__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.tb_matt);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lb_matt);
             this.Controls.Add(this.btn_customer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -368,8 +376,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_diem);
+            this.Controls.Add(this.lb_ma);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.tb_cccd);
             this.Controls.Add(this.tb_ngaysinh);
@@ -380,8 +388,8 @@
             this.Controls.Add(this.tb_ma);
             this.Controls.Add(this.btn_chinhsua);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_huy);
             this.Controls.Add(this.btn_luu);
+            this.Controls.Add(this.btn_huy);
             this.Controls.Add(this.btn_themkh);
             this.Controls.Add(this.cusList);
             this.DoubleBuffered = true;
@@ -403,8 +411,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_diem;
+        private System.Windows.Forms.Label lb_ma;
         private System.Windows.Forms.TextBox tb_email;
         private System.Windows.Forms.TextBox tb_cccd;
         private System.Windows.Forms.TextBox tb_ngaysinh;
@@ -416,11 +424,11 @@
         private System.Windows.Forms.Button btn_chinhsua;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_huy;
-        private System.Windows.Forms.Button btn_luu;
         private System.Windows.Forms.Button btn_themkh;
         private System.Windows.Forms.DataGridView cusList;
         private System.Windows.Forms.Button btn_customer;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lb_matt;
         private System.Windows.Forms.TextBox tb_matt;
+        private System.Windows.Forms.Button btn_luu;
     }
 }

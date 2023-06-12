@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="customer1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="product1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAADt0RVh0Q29tbWVudAB4cjpkOkRBRmowR2tKVXpjOjU3LGo6MzM0Nzg1MzM5NjQ2
+        wgAADsIBFShKgAAAADt0RVh0Q29tbWVudAB4cjpkOkRBRmowR2tKVXpjOjU3LGo6MzM0Nzg1MzM5NjQ2
         OTk5Nzg0LHQ6MjMwNjExMDaAw5YiAAD/a0lEQVR4Xuzd+bsuV1nn//5zvpARMpzknJMzJ+ckv3Qrs4JI
         BGQGEQIEGTKHkEAChCEJJGbU/hfa7taW1u5WIUAISDOpiKIgKK2oZO/ne3/WqrvqXnd9VtWq6XmefbJ/
         eF9VtdZ6hr0TyDnX61pV/+EDz/3Cyvf+5/yZhOOToQ88t90Hz/lSyF7bcXTDuV9e3XDOU9JXq3Ce78Zz
@@ -19703,10 +19703,10 @@
         /RDmDIUfNv8HQWhXUYYcUHIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="product1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="customer1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAADt0RVh0Q29tbWVudAB4cjpkOkRBRmowR2tKVXpjOjU3LGo6MzM0Nzg1MzM5NjQ2
+        wAAADsABataJCQAAADt0RVh0Q29tbWVudAB4cjpkOkRBRmowR2tKVXpjOjU3LGo6MzM0Nzg1MzM5NjQ2
         OTk5Nzg0LHQ6MjMwNjExMDaAw5YiAAD/a0lEQVR4Xuzd+bsuV1nn//5zvpARMpzknJMzJ+ckv3Qrs4JI
         BGQGEQIEGTKHkEAChCEJJGbU/hfa7taW1u5WIUAISDOpiKIgKK2oZO/ne3/WqrvqXnd9VtWq6XmefbJ/
         eF9VtdZ6hr0TyDnX61pV/+EDz/3Cyvf+5/yZhOOToQ88t90Hz/lSyF7bcXTDuV9e3XDOU9JXq3Ce78Zz

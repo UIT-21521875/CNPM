@@ -67,12 +67,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staff.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Staff.Designer.cs">
-      <DependentUpon>Staff.cs</DependentUpon>
-    </Compile>
     <Compile Include="Videogame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,9 +92,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Staff.resx">
-      <DependentUpon>Staff.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Videogame.resx">
       <DependentUpon>Videogame.cs</DependentUpon>
     </EmbeddedResource>
