@@ -21,9 +21,14 @@ C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Customer.resourc
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Login.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.product.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Properties.Resources.resources
-C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.staff.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Videogamecs.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.csproj.GenerateResource.cache
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.csproj.CoreCompileInputs.cache
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.exe
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.pdb
+C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Staff.resources
+C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Storage.resources
+C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Voucher.resources
+C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Report.resources
+C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Care.resources
+C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Invoice.resources

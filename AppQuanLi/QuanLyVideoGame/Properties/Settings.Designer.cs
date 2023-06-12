@@ -26,7 +26,7 @@ namespace QuanLyVideoGame.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-98F0GEC3;Initial Catalog=CNPM;Integrated Security=True")]
         public string QuanLyVideogame {
             get {
                 return ((string)(this["QuanLyVideogame"]));
