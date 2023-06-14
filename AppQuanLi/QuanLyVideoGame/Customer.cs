@@ -32,7 +32,7 @@ namespace QuanLyVideoGame
         private void loadDataGRV()
         {
             string sql;
-            sql = "SELECT KH.MAKH, KH.DIEMTICH, TT.HOTEN, TT.SODT, TT.DIACHI, TT.NGSINH, TT.CCCD, TT.EMAIL FROM KHACHHANG KH JOIN THONGTIN TT ON KH.MATT = TT.MATT;";
+            sql = "SELECT * FROM KHACHHANG";
             tblCL = Class.Funtion.GetDataToTable(sql); //Đọc dữ liệu từ bảng
             cusList.DataSource = tblCL; //Nguồn dữ liệu            
             cusList.Columns[0].HeaderText = "Mã khách hàng";
@@ -179,7 +179,7 @@ namespace QuanLyVideoGame
 
 
 
-            sql = "BEGIN TRANSACTION;\r\nINSERT INTO THONGTIN (HOTEN, SODT, DIACHI, NGSINH, CCCD, EMAIL, MATT) VALUES(N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + tb_diachi.Text + "', N'" + tb_ngaysinh.Text + "', N'" + tb_cccd.Text + "', N'" + tb_email.Text + "')\r\nINSERT INTO KHACHHANG(MAKH, DIEMTICH, MATT)VALUES(N'" + tb_ma.Text + "', N'" + tb_diem.Text + "', N'" + tb_matt.Text + "');\r\nCOMMIT;";
+            sql = "INSERT INTO KHACHHANG (CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI) VALUES(N'" + tb_cccd.Text + "', N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + tb_ngaysinh.Text + "', N'" + tb_email.Text + "', N'" + tb_diachi.Text + "');";
             Class.Funtion.RunSQL(sql); //Thực hiện câu lệnh sql
             loadDataGRV(); //Nạp lại DataGridView
             ResetValue();
