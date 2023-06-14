@@ -36,5 +36,15 @@ namespace QuanLyVideoGame
         {
 
         }
+
+        private void btn_chinhsua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_luu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

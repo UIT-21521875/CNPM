@@ -34,7 +34,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_manv = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_ngaybdl = new System.Windows.Forms.TextBox();
             this.tb_diachi = new System.Windows.Forms.TextBox();
@@ -51,6 +51,8 @@
             this.tb_timkiem = new System.Windows.Forms.TextBox();
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.btn_staff = new System.Windows.Forms.Button();
+            this.btn_luu = new System.Windows.Forms.Button();
+            this.btn_huy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.staffList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,16 +122,16 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "SDT";
             // 
-            // label2
+            // lb_manv
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(502, 186);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 19);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Mã nhân viên";
+            this.lb_manv.AutoSize = true;
+            this.lb_manv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_manv.Location = new System.Drawing.Point(502, 186);
+            this.lb_manv.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_manv.Name = "lb_manv";
+            this.lb_manv.Size = new System.Drawing.Size(101, 19);
+            this.lb_manv.TabIndex = 34;
+            this.lb_manv.Text = "Mã nhân viên";
             // 
             // label1
             // 
@@ -152,7 +154,6 @@
             this.tb_ngaybdl.Location = new System.Drawing.Point(636, 463);
             this.tb_ngaybdl.Multiline = true;
             this.tb_ngaybdl.Name = "tb_ngaybdl";
-            this.tb_ngaybdl.ReadOnly = true;
             this.tb_ngaybdl.Size = new System.Drawing.Size(171, 36);
             this.tb_ngaybdl.TabIndex = 32;
             this.tb_ngaybdl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -167,7 +168,6 @@
             this.tb_diachi.Location = new System.Drawing.Point(636, 412);
             this.tb_diachi.Multiline = true;
             this.tb_diachi.Name = "tb_diachi";
-            this.tb_diachi.ReadOnly = true;
             this.tb_diachi.Size = new System.Drawing.Size(171, 36);
             this.tb_diachi.TabIndex = 31;
             this.tb_diachi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -182,7 +182,6 @@
             this.tb_tinhtrang.Location = new System.Drawing.Point(636, 363);
             this.tb_tinhtrang.Multiline = true;
             this.tb_tinhtrang.Name = "tb_tinhtrang";
-            this.tb_tinhtrang.ReadOnly = true;
             this.tb_tinhtrang.Size = new System.Drawing.Size(171, 36);
             this.tb_tinhtrang.TabIndex = 30;
             this.tb_tinhtrang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -197,7 +196,6 @@
             this.tb_chucvu.Location = new System.Drawing.Point(636, 312);
             this.tb_chucvu.Multiline = true;
             this.tb_chucvu.Name = "tb_chucvu";
-            this.tb_chucvu.ReadOnly = true;
             this.tb_chucvu.Size = new System.Drawing.Size(171, 36);
             this.tb_chucvu.TabIndex = 29;
             this.tb_chucvu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -212,7 +210,6 @@
             this.tb_ngaysinh.Location = new System.Drawing.Point(636, 221);
             this.tb_ngaysinh.Multiline = true;
             this.tb_ngaysinh.Name = "tb_ngaysinh";
-            this.tb_ngaysinh.ReadOnly = true;
             this.tb_ngaysinh.Size = new System.Drawing.Size(171, 36);
             this.tb_ngaysinh.TabIndex = 28;
             this.tb_ngaysinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -227,7 +224,6 @@
             this.tb_sdt.Location = new System.Drawing.Point(636, 263);
             this.tb_sdt.Multiline = true;
             this.tb_sdt.Name = "tb_sdt";
-            this.tb_sdt.ReadOnly = true;
             this.tb_sdt.Size = new System.Drawing.Size(171, 36);
             this.tb_sdt.TabIndex = 27;
             this.tb_sdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -242,7 +238,6 @@
             this.tb_manv.Location = new System.Drawing.Point(636, 180);
             this.tb_manv.Multiline = true;
             this.tb_manv.Name = "tb_manv";
-            this.tb_manv.ReadOnly = true;
             this.tb_manv.Size = new System.Drawing.Size(171, 36);
             this.tb_manv.TabIndex = 26;
             this.tb_manv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -257,7 +252,6 @@
             this.tb_hoten.Location = new System.Drawing.Point(636, 130);
             this.tb_hoten.Multiline = true;
             this.tb_hoten.Name = "tb_hoten";
-            this.tb_hoten.ReadOnly = true;
             this.tb_hoten.Size = new System.Drawing.Size(171, 36);
             this.tb_hoten.TabIndex = 25;
             this.tb_hoten.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -281,6 +275,8 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.Violet;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Enabled = false;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(506, 72);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
@@ -324,7 +320,7 @@
             this.tb_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.tb_timkiem.Multiline = true;
             this.tb_timkiem.Name = "tb_timkiem";
-            this.tb_timkiem.Size = new System.Drawing.Size(388, 21);
+            this.tb_timkiem.Size = new System.Drawing.Size(324, 21);
             this.tb_timkiem.TabIndex = 64;
             // 
             // btn_timkiem
@@ -333,10 +329,10 @@
             this.btn_timkiem.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btn_timkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_timkiem.Location = new System.Drawing.Point(410, 75);
+            this.btn_timkiem.Location = new System.Drawing.Point(347, 75);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(70, 48);
+            this.btn_timkiem.Size = new System.Drawing.Size(133, 48);
             this.btn_timkiem.TabIndex = 63;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
@@ -357,12 +353,42 @@
             this.btn_staff.Text = "Nhân viên";
             this.btn_staff.UseVisualStyleBackColor = false;
             // 
+            // btn_luu
+            // 
+            this.btn_luu.BackColor = System.Drawing.Color.Violet;
+            this.btn_luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.Location = new System.Drawing.Point(658, 521);
+            this.btn_luu.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(136, 50);
+            this.btn_luu.TabIndex = 66;
+            this.btn_luu.Text = "Lưu";
+            this.btn_luu.UseVisualStyleBackColor = false;
+            this.btn_luu.Visible = false;
+            // 
+            // btn_huy
+            // 
+            this.btn_huy.BackColor = System.Drawing.Color.Violet;
+            this.btn_huy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_huy.Location = new System.Drawing.Point(518, 521);
+            this.btn_huy.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(136, 50);
+            this.btn_huy.TabIndex = 67;
+            this.btn_huy.Text = "Hủy";
+            this.btn_huy.UseVisualStyleBackColor = false;
+            this.btn_huy.Visible = false;
+            // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLyVideoGame.Properties.Resources.Untitled_design__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.btn_luu);
+            this.Controls.Add(this.btn_huy);
             this.Controls.Add(this.btn_staff);
             this.Controls.Add(this.tb_timkiem);
             this.Controls.Add(this.btn_timkiem);
@@ -373,7 +399,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb_manv);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_ngaybdl);
             this.Controls.Add(this.tb_diachi);
@@ -403,7 +429,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_manv;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_ngaybdl;
         private System.Windows.Forms.TextBox tb_diachi;
@@ -420,5 +446,7 @@
         private System.Windows.Forms.TextBox tb_timkiem;
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.Button btn_staff;
+        private System.Windows.Forms.Button btn_luu;
+        private System.Windows.Forms.Button btn_huy;
     }
 }

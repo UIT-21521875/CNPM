@@ -65,7 +65,7 @@
             this.label6.Location = new System.Drawing.Point(478, 261);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 19);
+            this.label6.Size = new System.Drawing.Size(68, 23);
             this.label6.TabIndex = 64;
             this.label6.Text = "Địa chỉ";
             // 
@@ -76,7 +76,7 @@
             this.label7.Location = new System.Drawing.Point(478, 314);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 19);
+            this.label7.Size = new System.Drawing.Size(92, 23);
             this.label7.TabIndex = 63;
             this.label7.Text = "Ngày sinh";
             // 
@@ -87,7 +87,7 @@
             this.label8.Location = new System.Drawing.Point(478, 414);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 19);
+            this.label8.Size = new System.Drawing.Size(58, 23);
             this.label8.TabIndex = 62;
             this.label8.Text = "Email";
             // 
@@ -98,7 +98,7 @@
             this.label5.Location = new System.Drawing.Point(478, 362);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 19);
+            this.label5.Size = new System.Drawing.Size(66, 23);
             this.label5.TabIndex = 61;
             this.label5.Text = "CCCD";
             // 
@@ -109,7 +109,7 @@
             this.label4.Location = new System.Drawing.Point(478, 172);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 19);
+            this.label4.Size = new System.Drawing.Size(66, 23);
             this.label4.TabIndex = 60;
             this.label4.Text = "Họ tên";
             // 
@@ -120,7 +120,7 @@
             this.label3.Location = new System.Drawing.Point(478, 214);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 19);
+            this.label3.Size = new System.Drawing.Size(118, 23);
             this.label3.TabIndex = 59;
             this.label3.Text = "Số điện thoại";
             // 
@@ -131,7 +131,7 @@
             this.lb_diem.Location = new System.Drawing.Point(478, 131);
             this.lb_diem.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_diem.Name = "lb_diem";
-            this.lb_diem.Size = new System.Drawing.Size(45, 19);
+            this.lb_diem.Size = new System.Drawing.Size(54, 23);
             this.lb_diem.TabIndex = 58;
             this.lb_diem.Text = "Điểm";
             // 
@@ -142,7 +142,7 @@
             this.lb_ma.Location = new System.Drawing.Point(478, 84);
             this.lb_ma.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_ma.Name = "lb_ma";
-            this.lb_ma.Size = new System.Drawing.Size(113, 19);
+            this.lb_ma.Size = new System.Drawing.Size(138, 23);
             this.lb_ma.TabIndex = 57;
             this.lb_ma.Text = "Mã khách hàng";
             // 
@@ -248,12 +248,13 @@
             this.btn_chinhsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_chinhsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_chinhsua.Location = new System.Drawing.Point(505, 527);
-            this.btn_chinhsua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_chinhsua.Margin = new System.Windows.Forms.Padding(2);
             this.btn_chinhsua.Name = "btn_chinhsua";
             this.btn_chinhsua.Size = new System.Drawing.Size(148, 63);
             this.btn_chinhsua.TabIndex = 44;
             this.btn_chinhsua.Text = "Chỉnh sửa";
             this.btn_chinhsua.UseVisualStyleBackColor = false;
+            this.btn_chinhsua.Click += new System.EventHandler(this.btn_chinhsua_Click);
             // 
             // button1
             // 
@@ -262,7 +263,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(487, 16);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(300, 40);
             this.button1.TabIndex = 47;
@@ -275,7 +276,7 @@
             this.btn_huy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_huy.Location = new System.Drawing.Point(517, 512);
-            this.btn_huy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_huy.Margin = new System.Windows.Forms.Padding(2);
             this.btn_huy.Name = "btn_huy";
             this.btn_huy.Size = new System.Drawing.Size(136, 50);
             this.btn_huy.TabIndex = 46;
@@ -290,7 +291,7 @@
             this.btn_themkh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_themkh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_themkh.Location = new System.Drawing.Point(657, 527);
-            this.btn_themkh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_themkh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_themkh.Name = "btn_themkh";
             this.btn_themkh.Size = new System.Drawing.Size(148, 63);
             this.btn_themkh.TabIndex = 45;
@@ -302,7 +303,7 @@
             // 
             this.cusList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cusList.Location = new System.Drawing.Point(20, 118);
-            this.cusList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cusList.Margin = new System.Windows.Forms.Padding(2);
             this.cusList.Name = "cusList";
             this.cusList.RowHeadersWidth = 51;
             this.cusList.RowTemplate.Height = 24;
@@ -314,14 +315,15 @@
             // 
             this.btn_customer.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_customer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_customer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_customer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_customer.ForeColor = System.Drawing.Color.Aqua;
             this.btn_customer.Image = global::QuanLyVideoGame.Properties.Resources._4;
             this.btn_customer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_customer.Location = new System.Drawing.Point(20, 2);
-            this.btn_customer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_customer.Margin = new System.Windows.Forms.Padding(2);
             this.btn_customer.Name = "btn_customer";
-            this.btn_customer.Size = new System.Drawing.Size(188, 38);
+            this.btn_customer.Size = new System.Drawing.Size(188, 54);
             this.btn_customer.TabIndex = 65;
             this.btn_customer.Text = "Khách hàng";
             this.btn_customer.UseVisualStyleBackColor = false;
@@ -333,7 +335,7 @@
             this.lb_matt.Location = new System.Drawing.Point(478, 451);
             this.lb_matt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_matt.Name = "lb_matt";
-            this.lb_matt.Size = new System.Drawing.Size(95, 19);
+            this.lb_matt.Size = new System.Drawing.Size(117, 23);
             this.lb_matt.TabIndex = 66;
             this.lb_matt.Text = "Mã thông tin";
             // 
@@ -355,7 +357,7 @@
             this.btn_luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_luu.Location = new System.Drawing.Point(657, 512);
-            this.btn_luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(136, 50);
             this.btn_luu.TabIndex = 46;
@@ -421,7 +423,7 @@
             this.Controls.Add(this.btn_themkh);
             this.Controls.Add(this.cusList);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Customer";
             this.Size = new System.Drawing.Size(825, 632);
             this.Load += new System.EventHandler(this.Customer_Load);

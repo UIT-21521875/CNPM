@@ -32,3 +32,9 @@ C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Voucher.resource
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Report.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Care.resources
 C:\tmp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Invoice.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Care.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Invoice.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Report.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Staff.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Storage.resources
+C:\temp\CNPM\AppQuanLi\QuanLyVideoGame\obj\Debug\QuanLyVideoGame.Voucher.resources

@@ -90,7 +90,7 @@ namespace QuanLyVideoGame
 
         private void btn_themkh_Click(object sender, EventArgs e)
         {
-            lb_ma.Visible= false;
+            lb_ma.Visible = false;
             tb_ma.Visible = false;
 
             tb_diem.Visible = false;
@@ -106,7 +106,7 @@ namespace QuanLyVideoGame
             tb_cccd.Enabled = true;
             tb_email.Enabled = true;
 
-           
+
 
             btn_chinhsua.Visible = false;
             btn_themkh.Visible = false;
@@ -195,7 +195,7 @@ namespace QuanLyVideoGame
             lb_diem.Visible = true;
 
             tb_matt.Visible = true;
-            lb_diem.Visible = true;
+            lb_matt.Visible = true;
         }
 
         private void btn_huy_Click(object sender, EventArgs e)
@@ -206,15 +206,107 @@ namespace QuanLyVideoGame
             btn_chinhsua.Visible = true;
             btn_luu.Visible = false;
 
-            lb_ma.Visible   = true;
-            tb_ma.Visible   = true;
-                              
+            lb_ma.Visible = true;
+            tb_ma.Visible = true;
+
             tb_diem.Visible = true;
             lb_diem.Visible = true;
-                              
+
             tb_matt.Visible = true;
             lb_matt.Visible = true;
 
         }
+
+        private void btn_chinhsua_Click(object sender, EventArgs e)
+        {
+
+            lb_ma.Visible = false;
+            tb_ma.Visible = false;
+
+            tb_diem.Visible = false;
+            lb_diem.Visible = false;
+
+            tb_matt.Visible = false;
+            lb_matt.Visible = false;
+
+            tb_hoten.Enabled = true;
+            tb_sdt.Enabled = true;
+            tb_diachi.Enabled = true;
+            tb_ngaysinh.Enabled = true;
+            tb_cccd.Enabled = true;
+            tb_email.Enabled = true;
+
+
+
+            btn_chinhsua.Visible = false;
+            btn_themkh.Visible = false;
+
+            btn_huy.Visible = true;
+            btn_huy.Enabled = true;
+
+            btn_luu.Visible = true;
+            btn_luu.Enabled = true;
+
+            string sql; //Lưu câu lệnh sql
+            if (tblCL.Rows.Count == 0)
+            {
+                MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_ma.Text == "") //nếu chưa chọn bản ghi nào
+            {
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_hoten.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập họ tên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_sdt.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_diachi.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_ngaysinh.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập ngày sinh ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_cccd.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập căn cước công dân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_email.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            // sql = "UPDATE tblChatLieu SET TenChatLieu=N'" + txtTenChatLieu.Text.ToString() + "' WHERE MaChatLieu=N'" + txtMaChatLieu.Text + "'";
+            //Class.Funtion.RunSQL(sql);
+            //loadDataGRV();
+            //ResetValue();
+
+            //btn_themkh.Visible = true;
+            //btn_chinhsua.Visible = true;
+            //btn_huy.Visible = false;
+            //btn_luu.Visible = false;
+
+            //lb_ma.Visible = true;
+            //tb_ma.Visible = true;
+
+            //tb_diem.Visible = true;
+            //lb_diem.Visible = true;
+
+            //tb_matt.Visible = true;
+            //lb_diem.Visible = true;
+        }
+    
     }
 }
