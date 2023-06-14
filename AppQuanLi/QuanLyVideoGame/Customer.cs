@@ -52,12 +52,12 @@ namespace QuanLyVideoGame
             tb_hoten.Enabled = false;
             tb_sdt.Enabled = false;
             tb_diachi.Enabled = false;
-            tb_ngaysinh.Enabled = false;
+            mbk_ngaysinh.Enabled = false;
             tb_cccd.Enabled = false;
             tb_email.Enabled = false;
             tb_diem.Enabled = false;
             tb_ma.Enabled = false;
-            tb_matt.Enabled = false;
+           
 
         }
 
@@ -80,7 +80,7 @@ namespace QuanLyVideoGame
             tb_hoten.Text = cusList.CurrentRow.Cells["HOTEN"].Value.ToString();
             tb_sdt.Text = cusList.CurrentRow.Cells["SODT"].Value.ToString();
             tb_diachi.Text = cusList.CurrentRow.Cells["DIACHI"].Value.ToString();
-            tb_ngaysinh.Text = cusList.CurrentRow.Cells["NGSINH"].Value.ToString();
+            mbk_ngaysinh.Text = cusList.CurrentRow.Cells["NGSINH"].Value.ToString();
             tb_cccd.Text = cusList.CurrentRow.Cells["CCCD"].Value.ToString();
             tb_email.Text = cusList.CurrentRow.Cells["EMAIL"].Value.ToString();
             btn_chinhsua.Enabled = true;
@@ -96,13 +96,11 @@ namespace QuanLyVideoGame
             tb_diem.Visible = false;
             lb_diem.Visible = false;
 
-            tb_matt.Visible = false;
-            lb_matt.Visible = false;
-
+            
             tb_hoten.Enabled = true;
             tb_sdt.Enabled = true;
             tb_diachi.Enabled = true;
-            tb_ngaysinh.Enabled = true;
+            mbk_ngaysinh.Enabled = true;
             tb_cccd.Enabled = true;
             tb_email.Enabled = true;
 
@@ -127,10 +125,10 @@ namespace QuanLyVideoGame
             tb_hoten.Text = "";
             tb_sdt.Text = "";
             tb_diachi.Text = "";
-            tb_ngaysinh.Text = "";
+            mbk_ngaysinh.Text = "";
             tb_cccd.Text = "";
             tb_email.Text = "";
-            tb_matt.Text = "";
+           
 
         }
 
@@ -158,10 +156,10 @@ namespace QuanLyVideoGame
                 tb_diachi.Focus();
                 return;
             }
-            if (tb_ngaysinh.Text.Trim().Length == 0)
+            if (mbk_ngaysinh.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập ngay sinh ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tb_ngaysinh.Focus();
+                mbk_ngaysinh.Focus();
                 return;
             }
             if (tb_cccd.Text.Trim().Length == 0)
@@ -179,7 +177,7 @@ namespace QuanLyVideoGame
 
 
 
-            sql = "INSERT INTO KHACHHANG (CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI) VALUES(N'" + tb_cccd.Text + "', N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + tb_ngaysinh.Text + "', N'" + tb_email.Text + "', N'" + tb_diachi.Text + "');";
+            sql = "INSERT INTO KHACHHANG (CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI) VALUES(N'" + tb_cccd.Text + "', N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + mbk_ngaysinh.Text + "', N'" + tb_email.Text + "', N'" + tb_diachi.Text + "');";
             Class.Funtion.RunSQL(sql); //Thực hiện câu lệnh sql
             loadDataGRV(); //Nạp lại DataGridView
             ResetValue();
@@ -194,8 +192,7 @@ namespace QuanLyVideoGame
             tb_diem.Visible = true;
             lb_diem.Visible = true;
 
-            tb_matt.Visible = true;
-            lb_matt.Visible = true;
+            
         }
 
         private void btn_huy_Click(object sender, EventArgs e)
@@ -212,9 +209,7 @@ namespace QuanLyVideoGame
             tb_diem.Visible = true;
             lb_diem.Visible = true;
 
-            tb_matt.Visible = true;
-            lb_matt.Visible = true;
-
+           
         }
 
         private void btn_chinhsua_Click(object sender, EventArgs e)
@@ -226,13 +221,11 @@ namespace QuanLyVideoGame
             tb_diem.Visible = false;
             lb_diem.Visible = false;
 
-            tb_matt.Visible = false;
-            lb_matt.Visible = false;
-
+          
             tb_hoten.Enabled = true;
             tb_sdt.Enabled = true;
             tb_diachi.Enabled = true;
-            tb_ngaysinh.Enabled = true;
+            mbk_ngaysinh.Enabled = true;
             tb_cccd.Enabled = true;
             tb_email.Enabled = true;
 
@@ -273,7 +266,7 @@ namespace QuanLyVideoGame
                 MessageBox.Show("Bạn chưa nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (tb_ngaysinh.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            if (mbk_ngaysinh.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
             {
                 MessageBox.Show("Bạn chưa nhập ngày sinh ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
