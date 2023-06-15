@@ -233,13 +233,19 @@ namespace QuanLyVideoGame
 
             btn_chinhsua.Visible = false;
             btn_themkh.Visible = false;
+            btn_luu .Visible = false;
 
             btn_huy.Visible = true;
             btn_huy.Enabled = true;
 
-            btn_luu.Visible = true;
-            btn_luu.Enabled = true;
+            btn_sua.Visible = true;
+            btn_sua.Enabled = true;
 
+
+        }
+
+        private void btn_Sửa_Click(object sender, EventArgs e)
+        {
             string sql; //Lưu câu lệnh sql
             if (tblCL.Rows.Count == 0)
             {
@@ -281,25 +287,21 @@ namespace QuanLyVideoGame
                 MessageBox.Show("Bạn chưa nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            // sql = "UPDATE tblChatLieu SET TenChatLieu=N'" + txtTenChatLieu.Text.ToString() + "' WHERE MaChatLieu=N'" + txtMaChatLieu.Text + "'";
-            //Class.Funtion.RunSQL(sql);
-            //loadDataGRV();
-            //ResetValue();
+            sql = "UPDATE KHACHHANG SET HOTEN=N'" + tb_hoten.Text.ToString() + "',DIACHI=N'" +tb_diachi.Text.ToString() + "',CCCD=N'" + tb_cccd.Text.ToString() + "',NGSINH=N'" + mbk_ngaysinh.Text.ToString() + "',SODT=N'" + tb_sdt.Text.ToString() + "',EMAIL=N'" + tb_email.Text.ToString() + "' WHERE MAKH=N'" + tb_ma.Text + "'";
+            Class.Funtion.RunSQL(sql);
+            loadDataGRV();
+            ResetValue();
 
-            //btn_themkh.Visible = true;
-            //btn_chinhsua.Visible = true;
-            //btn_huy.Visible = false;
-            //btn_luu.Visible = false;
+            btn_themkh.Visible = true;
+            btn_chinhsua.Visible = true;
+            btn_huy.Visible = false;
+            btn_sua.Visible = false;
 
-            //lb_ma.Visible = true;
-            //tb_ma.Visible = true;
+            lb_ma.Visible = true;
+            tb_ma.Visible = true;
 
-            //tb_diem.Visible = true;
-            //lb_diem.Visible = true;
-
-            //tb_matt.Visible = true;
-            //lb_diem.Visible = true;
+            tb_diem.Visible = true;
+            lb_diem.Visible = true;
         }
-    
     }
 }
