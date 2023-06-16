@@ -143,7 +143,7 @@
             this.tb_email.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_email.Location = new System.Drawing.Point(837, 494);
-            this.tb_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_email.Margin = new System.Windows.Forms.Padding(4);
             this.tb_email.Multiline = true;
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(227, 43);
@@ -156,7 +156,7 @@
             this.tb_cccd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_cccd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_cccd.Location = new System.Drawing.Point(837, 431);
-            this.tb_cccd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_cccd.Margin = new System.Windows.Forms.Padding(4);
             this.tb_cccd.Multiline = true;
             this.tb_cccd.Name = "tb_cccd";
             this.tb_cccd.Size = new System.Drawing.Size(227, 43);
@@ -169,7 +169,7 @@
             this.tb_diachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_diachi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_diachi.Location = new System.Drawing.Point(837, 308);
-            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_diachi.Margin = new System.Windows.Forms.Padding(4);
             this.tb_diachi.Multiline = true;
             this.tb_diachi.Name = "tb_diachi";
             this.tb_diachi.Size = new System.Drawing.Size(227, 43);
@@ -182,7 +182,7 @@
             this.tb_hoten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_hoten.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_hoten.Location = new System.Drawing.Point(837, 196);
-            this.tb_hoten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_hoten.Margin = new System.Windows.Forms.Padding(4);
             this.tb_hoten.Multiline = true;
             this.tb_hoten.Name = "tb_hoten";
             this.tb_hoten.Size = new System.Drawing.Size(227, 43);
@@ -195,7 +195,7 @@
             this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_sdt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_sdt.Location = new System.Drawing.Point(837, 247);
-            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_sdt.Margin = new System.Windows.Forms.Padding(4);
             this.tb_sdt.Multiline = true;
             this.tb_sdt.Name = "tb_sdt";
             this.tb_sdt.Size = new System.Drawing.Size(227, 43);
@@ -208,7 +208,7 @@
             this.tb_diem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_diem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_diem.Location = new System.Drawing.Point(837, 145);
-            this.tb_diem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_diem.Margin = new System.Windows.Forms.Padding(4);
             this.tb_diem.Multiline = true;
             this.tb_diem.Name = "tb_diem";
             this.tb_diem.Size = new System.Drawing.Size(227, 43);
@@ -221,7 +221,7 @@
             this.tb_ma.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_ma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_ma.Location = new System.Drawing.Point(837, 84);
-            this.tb_ma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_ma.Margin = new System.Windows.Forms.Padding(4);
             this.tb_ma.Multiline = true;
             this.tb_ma.Name = "tb_ma";
             this.tb_ma.Size = new System.Drawing.Size(227, 43);
@@ -356,7 +356,7 @@
             // mbk_ngaysinh
             // 
             this.mbk_ngaysinh.Location = new System.Drawing.Point(837, 386);
-            this.mbk_ngaysinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mbk_ngaysinh.Margin = new System.Windows.Forms.Padding(4);
             this.mbk_ngaysinh.Name = "mbk_ngaysinh";
             this.mbk_ngaysinh.Size = new System.Drawing.Size(227, 22);
             this.mbk_ngaysinh.TabIndex = 70;

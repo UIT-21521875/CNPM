@@ -171,7 +171,7 @@ namespace QuanLyVideoGame
             if (tb_email.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tb_cccd.Focus();
+                tb_email.Focus();
                 return;
             }
 

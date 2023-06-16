@@ -21,7 +21,7 @@ namespace QuanLyVideoGame
 
         }
 
-        private void Customer_Load(object sender, EventArgs e)
+        private void Staff_Load(object sender, EventArgs e)
         {
             btn_huy.Visible = false;
             btn_luu.Visible = false;
@@ -30,7 +30,7 @@ namespace QuanLyVideoGame
         private void loadDataGRV()
         {
             string sql;
-            sql = "SELECT KH.MAKH, KH.DIEMTICH, TT.HOTEN, TT.SODT, TT.DIACHI, TT.NGSINH, TT.CCCD, TT.EMAIL FROM KHACHHANG KH JOIN THONGTIN TT ON KH.MATT = TT.MATT;";
+            sql = "SELECT * FROM NHANVIEN";
             tblCL = Class.Funtion.GetDataToTable(sql); //Đọc dữ liệu từ bảng
             staffList.DataSource = tblCL; //Nguồn dữ liệu            
             staffList.Columns[0].HeaderText = "Mã nhân viên";
@@ -41,8 +41,10 @@ namespace QuanLyVideoGame
             staffList.Columns[5].HeaderText = "Tình trạng";
             staffList.Columns[6].HeaderText = "Ngày sinh";
             staffList.Columns[7].HeaderText = "Ngày bắt đầu làm";
-            
-            
+            staffList.Columns[8].HeaderText = "Căn cước công dân";
+            staffList.Columns[9].HeaderText = "Email";
+
+
             staffList.AllowUserToAddRows = false; //Không cho người dùng thêm dữ liệu trực tiếp
             staffList.EditMode = DataGridViewEditMode.EditProgrammatically; //Không cho sửa dữ liệu trực tiếp
 
@@ -50,17 +52,17 @@ namespace QuanLyVideoGame
             tb_hoten.Enabled = false;
             tb_sdt.Enabled = false;
             tb_diachi.Enabled = false;
-            tb_ngaysinh.Enabled = false;
+            mbk_ngaysinh.Enabled = false;
             tb_chucvu.Enabled = false;
             tb_tinhtrang.Enabled = false;
             tb_manv.Enabled = false;
-            tb_ngaybdl.Enabled = false;
-
+            tb_email.Enabled = false;
+            tb_cccd.Enabled = false;
+            mbk_ngbdl.Enabled = false;
         }
 
-        private void cusList_Click(object sender, EventArgs e)
+        private void staffList_Click(object sender, EventArgs e)
         {
-
             if (btn_themnhanvien.Enabled == false)
             {
                 MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -73,19 +75,20 @@ namespace QuanLyVideoGame
                 return;
             }
             tb_manv.Text = staffList.CurrentRow.Cells["MANV"].Value.ToString();
-            tb_chucvu.Text = staffList.CurrentRow.Cells["DIEMTICH"].Value.ToString();
+            tb_chucvu.Text = staffList.CurrentRow.Cells["CHUCVU"].Value.ToString();
             tb_hoten.Text = staffList.CurrentRow.Cells["HOTEN"].Value.ToString();
             tb_sdt.Text = staffList.CurrentRow.Cells["SODT"].Value.ToString();
             tb_diachi.Text = staffList.CurrentRow.Cells["DIACHI"].Value.ToString();
-            tb_ngaysinh.Text = staffList.CurrentRow.Cells["NGSINH"].Value.ToString();
-            tb_tinhtrang.Text = staffList.CurrentRow.Cells["CCCD"].Value.ToString();
-            tb_ngaybdl.Text = staffList.CurrentRow.Cells["EMAIL"].Value.ToString();
+            mbk_ngaysinh.Text = staffList.CurrentRow.Cells["NGSINH"].Value.ToString();
+            tb_tinhtrang.Text = staffList.CurrentRow.Cells["TINHTRANG"].Value.ToString();
+            tb_cccd.Text = staffList.CurrentRow.Cells["CCCD"].Value.ToString();
+            tb_email.Text = staffList.CurrentRow.Cells["EMAIL"].Value.ToString();
+            mbk_ngbdl.Text = staffList.CurrentRow.Cells["NGBDL"].Value.ToString();
             btn_chinhsua.Enabled = true;
             btn_themnhanvien.Enabled = true;
-
         }
 
-        private void btn_themkh_Click(object sender, EventArgs e)
+        private void btn_themnv_Click(object sender, EventArgs e)
         {
             lb_manv.Visible = false;
             tb_manv.Visible = false;
@@ -94,10 +97,12 @@ namespace QuanLyVideoGame
             tb_hoten.Enabled = true;
             tb_sdt.Enabled = true;
             tb_diachi.Enabled = true;
-            tb_ngaysinh.Enabled = true;
+            mbk_ngaysinh.Enabled = true;
             tb_chucvu.Enabled = true;
             tb_tinhtrang.Enabled = true;
-            tb_ngaybdl.Enabled=true;
+            tb_cccd.Enabled=true;
+            tb_email.Enabled=true;
+            mbk_ngbdl.Enabled=true;
 
 
 
@@ -118,11 +123,12 @@ namespace QuanLyVideoGame
             tb_hoten.Text = "";
             tb_sdt.Text = "";
             tb_diachi.Text = "";
-            tb_ngaysinh.Text = "";
-            tb_ngaybdl.Text = "";
+            mbk_ngaysinh.Text = "";
+            tb_cccd.Text = "";
             tb_tinhtrang.Text = "";
-            
-            
+            tb_email.Text = "";
+            mbk_ngbdl.Text = "";
+
         }
 
         private void btn_luu_Click(object sender, EventArgs e)
@@ -149,45 +155,57 @@ namespace QuanLyVideoGame
                 tb_diachi.Focus();
                 return;
             }
-            if (tb_ngaysinh.Text.Trim().Length == 0)
+            if (mbk_ngaysinh.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập ngay sinh ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tb_ngaysinh.Focus();
+                mbk_ngaysinh.Focus();
                 return;
             }
             if (tb_chucvu.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập căn cước công dân  ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn phải nhập chức vụ  ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tb_chucvu.Focus();
                 return;
             }
             if (tb_tinhtrang.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn phải nhập tình trạng ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tb_tinhtrang.Focus();
                 return;
             }
-            if (tb_ngaybdl.Text.Trim().Length == 0)
+            if (tb_cccd.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập căn cước công dân ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tb_cccd.Focus();
+                return;
+            }
+            if (tb_email.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tb_ngaybdl.Focus();
+                tb_email.Focus();
+                return;
+            }
+            if (mbk_ngbdl.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập ngày bắt đầu làm ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mbk_ngbdl.Focus();
                 return;
             }
 
 
 
 
-            //sql = "BEGIN TRANSACTION;\r\nINSERT INTO THONGTIN (HOTEN, SODT, DIACHI, NGSINH, CCCD, EMAIL, MATT) VALUES(N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + tb_diachi.Text + "', N'" + tb_ngaysinh.Text + "', N'" + tb_cccd.Text + "', N'" + tb_email.Text + "')\r\nINSERT INTO KHACHHANG(MAKH, DIEMTICH, MATT)VALUES(N'" + tb_ma.Text + "', N'" + tb_diem.Text + "', N'" + tb_matt.Text + "');\r\nCOMMIT;";
-            //Class.Funtion.RunSQL(sql); //Thực hiện câu lệnh sql
-            //loadDataGRV(); //Nạp lại DataGridView
-           // ResetValue();
-            //btn_themnhanvien.Visible = true;
-            //btn_chinhsua.Visible = true;
-            //btn_huy.Visible = false;
-            //btn_luu.Visible = false;
+            sql = "INSERT INTO NHANVIEN (CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI, CHUCVU, TINHTRANG, NGBDL) VALUES(N'" + tb_cccd.Text + "', N'" + tb_hoten.Text + "', N'" + tb_sdt.Text + "', N'" + mbk_ngaysinh.Text + "', N'" + tb_email.Text + "', N'" + tb_diachi.Text + "', N'" + tb_chucvu.Text + "', N'" + tb_tinhtrang.Text + "', N'" + mbk_ngbdl.Text + "');";
+            Class.Funtion.RunSQL(sql); //Thực hiện câu lệnh sql
+            loadDataGRV(); //Nạp lại DataGridView
+            ResetValue();
+            btn_themnhanvien.Visible = true;
+            btn_chinhsua.Visible = true;
+            btn_huy.Visible = false;
+            btn_luu.Visible = false;
 
-            //lb_manv.Visible = true;
-            //tb_manv.Visible = true;
+            lb_manv.Visible = true;
+            tb_manv.Visible = true;
 
            
         }
@@ -218,20 +236,27 @@ namespace QuanLyVideoGame
             tb_hoten.Enabled = true;
             tb_sdt.Enabled = true;
             tb_diachi.Enabled = true;
-            tb_ngaysinh.Enabled = true;
+            mbk_ngaysinh.Enabled = true;
             tb_tinhtrang.Enabled = true;
             tb_chucvu.Enabled = true;
-            tb_ngaybdl.Enabled = true;  
+            tb_cccd.Enabled = true;  
+            tb_email.Enabled = true;
+            mbk_ngbdl.Enabled = true;
 
             btn_chinhsua.Visible = false;
             btn_themnhanvien.Visible = false;
+            btn_luu.Visible=false;
 
             btn_huy.Visible = true;
             btn_huy.Enabled = true;
 
-            btn_luu.Visible = true;
-            btn_luu.Enabled = true;
+            btn_sua.Visible = true;
+            btn_sua.Enabled = true;
 
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
             string sql; //Lưu câu lệnh sql
             if (tblCL.Rows.Count == 0)
             {
@@ -258,44 +283,51 @@ namespace QuanLyVideoGame
                 MessageBox.Show("Bạn chưa nhập địa chỉ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (tb_ngaysinh.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            if (mbk_ngaysinh.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
             {
                 MessageBox.Show("Bạn chưa nhập ngày sinh ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             if (tb_chucvu.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
             {
-                MessageBox.Show("Bạn chưa nhập căn cước công dân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa nhập chức vụ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             if (tb_tinhtrang.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
             {
-                MessageBox.Show("Bạn chưa nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa nhập tình trạng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (tb_ngaybdl.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            if (tb_cccd.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập cccd", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (tb_email.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
             {
                 MessageBox.Show("Bạn chưa nhập email", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            // sql = "UPDATE tblChatLieu SET TenChatLieu=N'" + txtTenChatLieu.Text.ToString() + "' WHERE MaChatLieu=N'" + txtMaChatLieu.Text + "'";
-            //Class.Funtion.RunSQL(sql);
-            //loadDataGRV();
-            //ResetValue();
+            if (mbk_ngbdl.Text.Trim().Length == 0) //nếu chưa nhập tên chất liệu
+            {
+                MessageBox.Show("Bạn chưa nhập ngày bắt đầu làm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            sql = "UPDATE NHANVIEN SET HOTEN=N'" + tb_hoten.Text.ToString() + "',DIACHI=N'" + tb_diachi.Text.ToString() + "',CCCD=N'" + tb_cccd.Text.ToString() + "',NGSINH=N'" + mbk_ngaysinh.Text.ToString() + "',SODT=N'" + tb_sdt.Text.ToString() + "',EMAIL=N'" + tb_email.Text.ToString() + "',CHUCVU=N'" + tb_chucvu.Text.ToString() + "',TINHTRANG=N'" + tb_tinhtrang.Text.ToString() + "',NGBDL=N'" + mbk_ngbdl.Text.ToString() + "' WHERE MANV=N'" + tb_manv.Text + "'";
+            Class.Funtion.RunSQL(sql);
+            loadDataGRV();
+            ResetValue();
 
-            //btn_themkh.Visible = true;
-            //btn_chinhsua.Visible = true;
-            //btn_huy.Visible = false;
-            //btn_luu.Visible = false;
+            btn_themnhanvien.Visible = true;
+            btn_chinhsua.Visible = true;
+            btn_huy.Visible = false;
+            btn_sua.Visible = false;
 
-            //lb_ma.Visible = true;
-            //tb_ma.Visible = true;
+            lb_manv.Visible = true;
+            tb_manv.Visible = true;
 
-            //tb_diem.Visible = true;
-            //lb_diem.Visible = true;
 
-            //tb_matt.Visible = true;
-            //lb_diem.Visible = true;
+
         }
     }
 }
