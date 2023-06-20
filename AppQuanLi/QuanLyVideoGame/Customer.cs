@@ -202,6 +202,7 @@ namespace QuanLyVideoGame
             btn_themkh.Visible = true;
             btn_chinhsua.Visible = true;
             btn_luu.Visible = false;
+            btn_sua.Visible = false;
 
             lb_ma.Visible = true;
             tb_ma.Visible = true;

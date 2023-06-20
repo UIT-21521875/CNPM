@@ -478,30 +478,28 @@ INSERT INTO THELOAI (MATL, TENTL) VALUES
 (78, 'Auto battler'),
 (79, 'Hero shooter');
 
-INSERT INTO SANPHAM (MASP, MATL, TENSP, NHAPH, NGPH, NENTANG, GIATHUE)
+INSERT INTO SANPHAM (MASP,MATTSP, MATL, TENSP, NHAPH, NGPH, NENTANG, GIATHUE)
 VALUES
-('SP000001', 31, 'Yurukill: The Calumniation Game', 'JP: Izanagi Games', '2022-06-07', 'Playstation 5', 20000),
-('SP000003', 19, 'Yuoni', 'Chorus Worldwide', '2021-08-19', 'Playstation 5', 20000),
-('SP000004', 52, 'Yu-Gi-Oh! Master Duel', 'Konami', '2022-01-28', 'Playstation 5', 20000),
-('SP000005', 78, 'Ys X: Nordics', 'Nihon Falcom', NULL, 'Playstation 5', 20000),
-('SP000006', 45, 'Ys VIII: Lacrimosa of Dana', 'NIS America', '2022-11-15', 'Playstation 5', 20000),
-('SP000007', 73, 'Ys IX: Monstrum Nox', 'NIS America', '2023-05-09', 'Playstation 5', 20000),
-('SP000008', 29, 'Yakuza: Like a Dragon', 'Sega', '2021-03-02', 'Playstation 5', 20000),
-('SP000009', 48, 'WWE 2K23', '2K', '2023-03-17', 'Playstation 5', 20000),
-('SP000010', 69, 'WWE 2K22', '2K', '2022-03-11', 'Playstation 5', 20000),
-('SP000011', 52, 'Wreckfest', 'THQ Nordic', '2021-06-01', 'Playstation 5', 20000),
-('SP000013', 56, 'WRC 10', 'Nacon', '2021-09-02', 'Playstation 5', 20000),
-('SP000015', 31, 'WRC 9', 'Nacon', '2020-11-12', 'Playstation 5', 20000),
-('SP000017', 1, 'Worms Rumble', 'Team17', '2020-12-01', 'Playstation 5', 20000),
-('SP000020', 34, 'World War Z', 'Saber Interactive', '2019-04-16', 'Playstation 5', 20000),
-('SP000022', 3, 'Wolfenstein: The New Order', 'Bethesda Softworks', '2014-05-20', 'Playstation 5', 20000),
-('SP000023', 3, 'Wolfenstein: The Old Blood', 'Bethesda Softworks', '2015-05-05', 'Playstation 5', 20000),
-('SP000024', 3, 'Wolfenstein II: The New Colossus', 'Bethesda Softworks', '2017-10-27', 'Playstation 5', 20000),
-('SP000025', 42, 'Watch Dogs: Legion', 'Ubisoft', '2020-10-29', 'Playstation 5', 20000),
-('SP000026', 3, 'Watch Dogs 2', 'Ubisoft', '2016-11-15', 'Playstation 5', 20000),
-('SP000027', 3, 'Watch Dogs', 'Ubisoft', '2014-05-27', 'Playstation 5', 20000),
-('SP000039', 31, 'Warhammer: Vermintide 2', 'Fatshark', '2018-03-08', 'Playstation 5', 20000);
-
+('MASP0004','MATTSP0001', 'TL0001', 'Yu-Gi-Oh! Master Duel', 'Konami', '2022-01-28', 'Playstation 5', 20000),
+('MASP0005','MATTSP0001', 'TL0001', 'Ys X: Nordics', 'Nihon Falcom', NULL, 'Playstation 5', 20000),
+('MASP0006','MATTSP0001', 'TL0001', 'Ys VIII: Lacrimosa of Dana', 'NIS America', '2022-11-15', 'Playstation 5', 20000),
+('MASP0007','MATTSP0001', 'TL0001', 'Ys IX: Monstrum Nox', 'NIS America', '2023-05-09', 'Playstation 5', 20000),
+('MASP0008','MATTSP0001', 'TL0001', 'Yakuza: Like a Dragon', 'Sega', '2021-03-02', 'Playstation 5', 20000),
+('MASP0009','MATTSP0001', 'TL0001', 'WWE 2K23', '2K', '2023-03-17', 'Playstation 5', 20000),
+('MASP00010','MATTSP0001', 'TL0001', 'WWE 2K22', '2K', '2022-03-11', 'Playstation 5', 20000),
+('MASP00011','MATTSP0001', 'TL0001', 'Wreckfest', 'THQ Nordic', '2021-06-01', 'Playstation 5', 20000),
+('MASP00013','MATTSP0001', 'TL0001', 'WRC 10', 'Nacon', '2021-09-02', 'Playstation 5', 20000),
+('MASP00015','MATTSP0001', 'TL0001', 'WRC 9', 'Nacon', '2020-11-12', 'Playstation 5', 20000),
+('MASP00017','MATTSP0001', 'TL0001','Worms Rumble', 'Team17', '2020-12-01', 'Playstation 5', 20000),
+('MASP00020','MATTSP0001', 'TL0001', 'World War Z', 'Saber Interactive', '2019-04-16', 'Playstation 5', 20000),
+('MASP00022','MATTSP0001', 'TL0001','Wolfenstein: The New Order', 'Bethesda Softworks', '2014-05-20', 'Playstation 5', 20000),
+('MASP00023','MATTSP0001', 'TL0001','Wolfenstein: The Old Blood', 'Bethesda Softworks', '2015-05-05', 'Playstation 5', 20000),
+('MASP00024','MATTSP0001', 'TL0001','Wolfenstein II: The New Colossus', 'Bethesda Softworks', '2017-10-27', 'Playstation 5', 20000),
+('MASP00025','MATTSP0001', 'TL0001', 'Watch Dogs: Legion', 'Ubisoft', '2020-10-29', 'Playstation 5', 20000),
+('MASP00026','MATTSP0001', 'TL0001','Watch Dogs 2', 'Ubisoft', '2016-11-15', 'Playstation 5', 20000),
+('MASP00027','MATTSP0001', 'TL0001','Watch Dogs', 'Ubisoft', '2014-05-27', 'Playstation 5', 20000),
+('MASP00039','MATTSP0001', 'TL0001', 'Warhammer: Vermintide 2', 'Fatshark', '2018-03-08', 'Playstation 5', 20000);
+SELECT * FROM SANPHAM
 
 INSERT INTO THONGTIN (MATT, CCCD, HOTEN, SODT, NGSINH, EMAIL, DIACHI)
 VALUES
