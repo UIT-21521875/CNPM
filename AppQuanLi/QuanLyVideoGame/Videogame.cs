@@ -120,5 +120,18 @@ namespace QuanLyVideoGame
             customer1.Visible = false;
             staff1.Visible = false;
         }
+
+        private void pb_menu_Click(object sender, EventArgs e)
+        {
+            invoice1.Visible = false;
+            care1.Visible = false;
+            report1.Visible = false;
+            voucher1.Visible = false;
+            storage1.Visible = false;
+            product1.Visible = false;
+            customer1.Visible = false;
+            staff1.Visible = false;
+        }
+
     }
 }
