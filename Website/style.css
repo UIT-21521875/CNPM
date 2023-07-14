@@ -55,6 +55,10 @@ body {
     padding: 20px 80px;
     background: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
@@ -65,7 +69,7 @@ body {
 
 #logo{
     width: auto;
-    height: 70px;
+    height: 10px;
 }
 
 #navbar li {
