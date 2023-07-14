@@ -53,7 +53,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #e3e6f3;
+    background: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -63,18 +63,27 @@ body {
     justify-content: center;
 }
 
+#logo{
+    width: auto;
+    height: 70px;
+}
+
 #navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-navbar li {
+#navbar li {
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     color: #1a1a1a;
     transition: 0.3s ease;
+}
+
+#navbar li a{
+    text-decoration: none;
 }
 
 #navbar li a:hover,
