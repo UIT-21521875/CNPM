@@ -11,61 +11,52 @@ using System.Windows.Forms;
 
 namespace AppQuanLi
 {
+    
     public partial class StaffManagement : Form
     {
+        DataTable tblKH;
         public StaffManagement()
         {
             InitializeComponent();
 
-            loadStaffList();
+            
+
+            AddStaffBinding();
         }
         void loadStaffList()
         {
-            string connectionSTR = "Data Source=MSI;Initial Catalog=CNPM;Integrated Security=True";
+            string connectionSTR = "Data Source=LAPTOP-98F0GEC3;Initial Catalog=CNPM;Integrated Security=True";
 
 
             SqlConnection connection = new SqlConnection(connectionSTR);
-            string query = "select * from NHANVIEN";
-
+            string query = "SELECT NV.*, TT.HOTEN, TT.SODT, TT.DIACHI,TT.NGSINH\r\nFROM NHANVIEN NV\r\nJOIN THONGTIN TT ON NV.MATT = TT.MATT;";
             connection.Open();
 
             SqlCommand command = new SqlCommand(query, connection);
 
-            DataTable data = new DataTable();
+             tblKH = new DataTable();
 
             SqlDataAdapter adapter = new SqlDataAdapter(command);
 
-            adapter.Fill(data);
+            adapter.Fill(tblKH);
 
             connection.Close();
             
-            staffList.DataSource = data;
+            staffList.DataSource = tblKH;
         }
-
-        private void btn_timkiem_Click(object sender, EventArgs e)
+        void AddStaffBinding()
         {
-
+            tb_hoten.DataBindings.Add(new Binding("Text", staffList.DataSource, "HOTEN"));
+            tb_manv.DataBindings.Add(new Binding("Text", staffList.DataSource, "MANV"));
+            tb_ngaysinh.DataBindings.Add(new Binding("Text", staffList.DataSource, "NGSINH"));
+            tb_sdt.DataBindings.Add(new Binding("Text", staffList.DataSource, "SODT"));
+            tb_chucvu.DataBindings.Add(new Binding("Text", staffList.DataSource, "CHUCVU"));
+            tb_tinhtrang.DataBindings.Add(new Binding("Text", staffList.DataSource, "TINHTRANG"));
+            tb_diachi.DataBindings.Add(new Binding("Text", staffList.DataSource, "DIACHI"));
+            tb_ngaybdl.DataBindings.Add(new Binding("Text", staffList.DataSource, "NGBDL"));
         }
 
-        private void StaffManager_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btn_xoasanpham_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_timkiem_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_xoasanpham_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_themnhanvien_Click(object sender, EventArgs e)
         {
@@ -77,6 +68,27 @@ namespace AppQuanLi
         {
             StaffInfor s = new StaffInfor();
             s.ShowDialog();
+        }
+
+        private void staffList_Click(object sender, EventArgs e)
+        {
+            if (btn_themnhanvien.Enabled == false)
+            {
+                MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tb_hoten.Focus();
+                return;
+            }
+            if (tblKH.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            tb_manv.Text = staffList.CurrentRow.Cells["MaNhanVien"].Value.ToString();
+            tb_hoten.Text = staffList.CurrentRow.Cells["TenNhanVien"].Value.ToString();
+            tb_diachi.Text = staffList.CurrentRow.Cells["DiaChi"].Value.ToString();
+            tb_sdt.Text = staffList.CurrentRow.Cells["DienThoai"].Value.ToString();
+            tb_ngaysinh.Text = staffList.CurrentRow.Cells["NgaySinh"].Value.ToString();
+            btn_chinhsua.Enabled = true;
         }
     }
 }
