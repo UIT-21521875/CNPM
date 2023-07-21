@@ -1,0 +1,29 @@
+<%- include('./partials/headernav.ejs'); -%>
+
+<form id="addCart11">
+    
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/gow.jpg" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Action Adventure</h6>
+            <h4>God Of War</h4>
+            <h2>20.000 VND</h2>
+                <input type="hidden" name="title" value="God Of War" />
+            <input type="number" name="quantity" value="1">
+
+                <button
+                onclick="SubForm(11)"
+                class="fas fa-shopping-cart cart"
+                >Add To Cart</button>  
+ 
+            <h4>Product Details</h4>
+            <span>His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.</span>
+        </div>
+    </section>
+</form>
+
+    <script src="script.js"></script> <!-- Link voi script-->
+</body>
+</html>
