@@ -1,0 +1,54 @@
+<%- include('./partials/headernav.ejs'); -%>
+
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% for( let cart of myCart) { %>
+        <form action="/cart/editcart?_method=PATCH" method="POST" class="box">
+
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="<%= cart.img %>" alt=""></td>
+                        <td><%= cart.title %></td>
+                        <td>20.000 VND</td>
+                        <td><input  type="number" name="quantity" value="<%= cart.quantity %>"><button
+                            class="fas fa-edit"
+                            ></button></td>
+            <input type="hidden" name="title" value="<%= cart.title %>" />
+                       
+                        <td><%= cart.quantity*20000 %> VND</td>
+                    </tr>
+        </form>
+                <% } %>
+             
+            </tbody>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="subtotal">
+            <h4>Cart Totals</h4>
+            <table >
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="cart31"><strong>60.000 VND</strong></td>
+                </tr>
+            </table>
+            <a href="/checkout">
+                <button class="normal" >Proceed to checkout</button>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script> <!-- Link voi script-->
+</body>
+</html>

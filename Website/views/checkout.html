@@ -1,0 +1,21 @@
+<%- include('./partials/headernav.ejs'); -%>
+
+    <section id="checkout" class="section-p1">
+        <h2>Checkout information</h2>
+        <form action="/checkout" method="post">
+            <div class="form-group">
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="cusName" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="pNumber" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="OK">
+            </div>
+        </form>
+    </section>    
+    <script src="script.js"></script> <!-- Link voi script-->
+</body>
+</html>
