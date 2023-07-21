@@ -1,6 +1,6 @@
 const Cart = require("./cart.model");
 
-async function addToCart(cartToken, productId, quantity) {
+async function addToCart(cartToken, productId, quantity,img) {
   try {
     console.log("cart.service addToCart");
 
@@ -17,6 +17,7 @@ async function addToCart(cartToken, productId, quantity) {
         title: productId,
         quantity: quantity,
         isBought: false,
+        img : img
       });
       await newCart.save();
     } else {

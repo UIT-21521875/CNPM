@@ -1,59 +1,21 @@
 <%- include('./partials/headernav.ejs'); -%>
 
-    <section id="cart" class="section-p1">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/gow.jpg" alt=""></td>
-                    <td>God Of War</td>
-                    <td>20.000 VND</td>
-                    <td><input type="number" value="1"></td>
-                    <td>20.000 VND</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/gow.jpg" alt=""></td>
-                    <td>God Of War</td>
-                    <td>20.000 VND</td>
-                    <td><input type="number" value="1"></td>
-                    <td>20.000 VND</td>
-                </tr>
-                <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                    <td><img src="img/products/gow.jpg" alt=""></td>
-                    <td>God Of War</td>
-                    <td>20.000 VND</td>
-                    <td><input type="number" value="1"></td>
-                    <td>20.000 VND</td>
-                </tr>
-            </tbody>
-    </section>
-    <section id="cart-add" class="section-p1">
-        <div id="subtotal">
-            <h3>Cart Totals</h3>
-            <table>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>60.000 VND</strong></td>
-                </tr>
-            </table>
-            <a href="checkout.html">
-                <button class="normal">Proceed to checkout</button>
-            </a>
-        </div>
-    </section>
-
+    <section id="checkout" class="section-p1">
+        <h2>Checkout information</h2>
+        <form action="/checkout" method="post">
+            <div class="form-group">
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="cusName" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="pNumber" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="OK">
+            </div>
+        </form>
+    </section>    
     <script src="script.js"></script> <!-- Link voi script-->
 </body>
 </html>

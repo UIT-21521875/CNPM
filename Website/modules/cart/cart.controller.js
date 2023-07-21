@@ -31,7 +31,8 @@ router.post("/add", async (req, res) => {
   const { quantity } = req.body;
   const { title } = req.body;
   const { cartToken } = req.cookies;
-  const result = await cart.addToCart(cartToken, title, quantity);
+  const { img } = req.body;
+  const result = await cart.addToCart(cartToken, title, quantity,img);
 
   res.json({ result });
 });

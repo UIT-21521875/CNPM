@@ -19,7 +19,7 @@
 
                     <tr>
                         <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="img/products/gow.jpg" alt=""></td>
+                        <td><img src="<%= cart.img %>" alt=""></td>
                         <td><%= cart.title %></td>
                         <td>20.000 VND</td>
                         <td><input  type="number" name="quantity" value="<%= cart.quantity %>"><button
@@ -43,8 +43,8 @@
                     <td id="cart31"><strong>60.000 VND</strong></td>
                 </tr>
             </table>
-            <a href="checkout.html">
-                <button class="normal" href="/checkout">Proceed to checkout</button>
+            <a href="/checkout">
+                <button class="normal" >Proceed to checkout</button>
             </a>
         </div>
     </section>
